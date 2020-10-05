@@ -252,8 +252,7 @@ li{
 }
 
 .profile-img{
-  flex: 1;
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 
 .about-details{
@@ -330,10 +329,6 @@ li{
   margin-bottom: 0;
 }
 
-.profile-img{
-  width: 50rem;
-  flex: 1;
-}
 
 .portfolio-description{
   flex: 1;
