@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5917f2cd-07ca-4aa2-a8f7-3fb15d0d2979" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,9 @@
       <workItem from="1606765536404" duration="1559000" />
       <workItem from="1609943157354" duration="2296000" />
       <workItem from="1611765970818" duration="23000" />
-      <workItem from="1614102938318" duration="608000" />
+      <workItem from="1614102938318" duration="1114000" />
+      <workItem from="1620781283156" duration="5000" />
+      <workItem from="1634154109318" duration="1569000" />
     </task>
     <servers />
   </component>
@@ -87,11 +90,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="258" y="168" key="Vcs.Push.Dialog.v2" timestamp="1614103305516">
-      <screen x="0" y="25" width="1440" height="813" />
-    </state>
-    <state x="258" y="168" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1614103305516" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
