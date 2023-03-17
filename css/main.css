@@ -215,35 +215,89 @@ li{
 
 .landing-text h1{
   font-size: 10rem;
-  font-family: 'Roboto', monospace;
-  background: linear-gradient(to top,white, black);
+  font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  background:black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;
-  user-select: none;
 }
 
 .landing-text h6{
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 300;
 }
 
-.about .container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#scroll-container {
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 50%;
+    height: 100px;
+    width: 1000px;
+    margin-left: -100px; /* half of you width */
+    margin-top: 100px;
+}
+
+#scroll-text {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 5rem;
+  font-weight: 300;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
 
 .about-heading{
   text-align: center;
-  text-transform: uppercase;
   line-height: 0;
   margin-bottom: 6rem;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  background:black;
 }
 
 .about-heading h1{
-  font-size: 10rem;
+  font-size: 7rem;
   opacity: .3;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  background:black;
 }
 
 .about-heading h6{
@@ -252,6 +306,9 @@ li{
 }
 
 .profile-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 2rem;
 }
 
@@ -259,9 +316,6 @@ li{
   flex: 1;
 }
 
-.social-media{
-  margin-top: 5rem;
-}
 
 .social-media i{
   font-size: 5rem;
@@ -446,10 +500,6 @@ li{
 
   .section-heading h1{
     font-size: 3rem;
-  }
-
-  .about-details .nav-list{
-    flex-direction: initial;
   }
 
   .about-details li{

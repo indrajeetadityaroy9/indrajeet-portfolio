@@ -21,130 +21,223 @@
   <link rel="stylesheet" href="css/main.css">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
+
+  <script>
+    const words = ["Hello, World!", "Hola Mundo!", "Bonjour le monde!", "مرحبا بالعالم! ", "你好世界！ "];
+let index = 0;
+
+function displayWord() {
+  document.getElementById("word").innerHTML = words[index];
+  index++;
+  if (index === words.length) {
+    index = 0;
+  }
+}
+
+setInterval(displayWord, 1000);
+  </script>
+
+  <style>
+		.image-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 20vh;
+		}
+
+		.image-box {
+			width: 400px;
+			height: 250px;
+			background-image: url("img/me3.png");
+			background-position: center;
+			background-size: cover;
+			border: 2px solid black;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			margin-right: 20px;
+		}
+
+    .intro-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.text-box {
+			margin-left: 20px;
+      margin-right: 100px;
+		}
+
+		h1 {
+			font-size: 32px;
+			margin: 0 0 10px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0;
+		}
+
+    .social-media-icons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.social-media-icons a {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+      margin-top: 30px;
+			text-align: center;
+			line-height: 40px;
+			color: white;
+		}
+
+.timeline {
+  position: relative;
+  margin-left: 100px; /* adjust this value to change the position of the timeline line */
+}
+
+.entry {
+  position: relative;
+  margin-bottom: 100px; /* adjust this value to change the spacing between entries */
+}
+
+.year {
+  position: absolute;
+  top: 0;
+  left: -100px; /* adjust this value to change the distance of the year from the timeline line */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #333;
+  margin-left: 68px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  margin-left: 150px; /* adjust this value to change the distance of the content from the timeline line */
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #333;
+}
+
+#word {
+  font-size: 10rem;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  background:black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+}
+    
+	</style>
 </head>
 
 <body>
 <header>
-  <div class="menu-toggler">
-    <div class="bar half start"></div>
-    <div class="bar"></div>
-    <div class="bar half end"></div>
-  </div>
-  <nav class="top-nav">
-    <ul class="nav-list">
-      <li>
-        <a href="index.html" class="nav-link">Home</a>
-      </li>
-      <li>
-        <a href="#about" class="nav-link">About</a>
-      </li>
-      <li>
-        <a href="#interests" class="nav-link">Interests</a>
-      </li>
-      <li>
-        <a href="#portfolio" class="nav-link">Portfolio</a>
-      </li>
-      <li>
-        <a href="#experience" class="nav-link">Experience</a>
-      </li>
-    </ul>
-  </nav>
   <div class="landing-text">
-    <h1>Hello World!</h1>
+    <div id="word">
+    <h1></h1>
+  </div>
+    <div id="scroll-container">
+      <div id="scroll-text">Welcome to my portfolio.<div>
+    </div>
   </div>
 </header>
 
-<section class="about" id="about">
-  <div class="container">
-    <div class="profile-img">
-      <img src="img/me3.png" alt="">
-    </div>
-    <div class="about-details">
-      <div class="about-heading">
-        <h1>About</h1>
-        <h6>Myself</h6>
-      </div>
-      <p>My name is Indrajeet Aditya Roy and welcome to my portfolio!
-        I'm currently an undergraduate student at Iowa State University
-        majoring in Software Engineering and minoring in Cyber Security.
-        <br>
-        <br>
-        My goal is to gain knowledge and expertise in order to contribute
-        significantly to the world of Computing and continue to
-        grow professionally.</p>
-      <div class="social-media">
-        <ul class="nav-list">
-          <li>
-            <a href="https://www.linkedin.com/in/indrajeet-aditya-roy/" target="_blank" class="icon-link">
-              <i class="fab fa-linkedin" style="font-size:60px;color:black"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/r0y09/" target="_blank" class="icon-link">
-              <i class="fab fa-github"style="font-size:60px;color:black"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="icon-link">
-              <i class="fab fa-angellist"style="font-size:60px;color:black"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="interests" id="interests">
+<section class="portfolio" id="portfolio">
   <div class="container">
     <div class="section-heading">
-      <h1>SKILLS</h1>
+      <h1>ABOUT ME</h1>
+      <h6>A little bit about myself</h6>
     </div>
     <div class="my-interests">
       <div class="interest">
-        <a href="#" class="icon-link">
-          <i class="fa fa-code" aria-hidden="true"style="font-size:60px;color:black"></i>
-        </a>
-        <h1>LANGUAGES</h1>
-        <p>C, C++, Go, Elixir, Python, JavaScript, TypeScript, Java, Kotlin, Swift, CSS, HTML</p>
+    <div class="image-container">
+      <div class="image-box"></div>
+      <div class="text-box">
+        <div class="intro-content">
+          <p>I'm Indrajeet Aditya Roy and welcome to my portfolio! I'm a recent grad, 
+            having graduated in May 2022 with an undergraduate major degree in
+            Software Engineering and minor degree in Cyber Security. I have
+            been working as an Entry-Level SWE at The RealReal for the past year. 
+            <br>
+            <br>
+            My goal is to gain knowledge, expertise and experience 
+            in order to continue to grow professionally and build innovative solutions.</p>
+        </div>
+        <div class="social-media-icons">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/indrajeet-aditya-roy/" target="_blank" class="icon-link">
+                <i class="fab fa-linkedin" style="font-size:60px;color:black"></i>
+              </a>
+            </li>
+            <li>
+              <a href="img/Resume.pdf" download>
+                <i class="fa fa-file"style="font-size:60px;color:black"></i>
+              </a>                  
+            </li>
+            <li>
+              <a href="https://github.com/r0y09/" target="_blank" class="icon-link">
+                <i class="fab fa-github"style="font-size:60px;color:black"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="interest">
-        <a href="#" class="icon-link">
-          <i class="fa fa-laptop" aria-hidden="true"style="font-size:60px;color:black"></i>
-        </a>
-        <h1>WEB DEVELOPMENT</h1>
-      <p>React,Vue.js,Node.jsExpress.js, Vue.js, Angular, Bootstrap, Django, Flask, Spring</p>
       </div>
-      <div class="interest">
-        <a href="#" class="icon-link">
-          <i class="fas fa-mobile-alt" aria-hidden="true"style="font-size:60px;color:black"></i>
-        </a>
-        <h1>MOBILE DEVELOPMENT</h1>
-        <p>React Native, Flutter, Native Android, Ionic</p>
       </div>
-      <div class="interest">
-        <a href="#" class="icon-link">
-          <i class="fa fa-code" style="font-size:60px;color:black"></i>
-        </a>
-        <h1>TESTING TOOLS</h1>
-        <p>Selenium, XCTest, JUnit, Mockito, Espresso, Jenkins, Docker, PostMan</p>
-      </div>
-      <div class="interest">
-        <a href="#" class="icon-link">
-          <i class="fa fa-code" style="font-size:60px;color:black"></i>
-        </a>
-        <h1>TOOLS</h1>
-        <p>Vim, Android Studio, MySQL Workbench, Docker Compose, Firebase, AWS, GraphQL</p>
-      </div>
-      <div class="interest">
-        <a href="#" class="icon-link">
-          <i class="fas fa-lock" aria-hidden="true"style="font-size:60px;color:black"></i>
-        </a>
-        <h1>CYBER SECURITY</h1>
-        <p> Kali Linux, Arch Linux, Wireshark, Nmap, Metasploit, BurpSuite, Nikto, Nessus, Snort, BeEF, IDA Pro</p>
-      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-heading">
+      <h1>KNOWLEDGE</h1>
+      <h6>knowledge, experience and familiarity with programming languages, frameworks and tools.</h6>
     </div>
   </div>
 </section>
@@ -153,37 +246,53 @@
   <div class="container">
     <div class="section-heading">
       <h1>Work Experience</h1>
+      <h6>A little bit about my work experience</h6>
     </div>
     <div class="timeline">
-      <ul>
-        <li class="date" date-date="2018 - 2019">
-          <h1>ISU Dining</h1>
-          <p>STUDENT EMPLOYEE</p>
+      <div class="entry">
+        <div class="year">2018</div>
+        <div class="content">
+          <h2>Iowa State University Dining</h2>
+          <h3>STUDENT EMPLOYEE</h3>
+          <p>Worked with large & diverse teams of student employees in various departments of the dining center.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="year">2019</div>
+        <div class="content">
+          <h2>Iowa State University ELO</h2>
+          <h3>STUDENT EMPLOYEE</h3>
+          <p>Assisted instructors with setting up classes, captured classroom content, provided instructors with technical support, and made sure that notes were uploaded to CyBox properly with quality.
           <br>
-          <p>I worked with large & diverse teams of student employees in various departments of the dining center</p>
-        </li>
-      </ul>
-      <ul>
-        <li class="date" date-date="2020 - 2020">
-          <h1>Carlin Fit LLC</h1>
-          <p>SOFTWARE ENGINEER INTERN</p>
-          <br>
-          <p>I worked in the software development team and coordinated with the hardware development team during
-            the development of the mobile platform (Android, IOS) to be paired with the hardware component of the
-            Purple Bug UV light cleaning product. Developed the architecture and implementation of the android
-            application with hardware communication via BLE protocols.</p>
-        </li>
-      </ul>
-      <ul>
-        <li class="date" date-date="2021 - 2021">
-          <h1>The RealReal</h1>
-          <p>SOFTWARE ENGINEER INTERN</p>
-          <br>
-          <p>I worked in the seller/consignor tribe and assisted in the development of the GPN seller program. Developed a
-            backend service in Elixir, corresponding frontend client in Ruby on Rails and setup concurrent message with Kafka.</p>
-        </li>
-      </ul>
-    </div>
+          <p>Using Echo 360 to edit transcripts for recorded lectures. Made sure that the professor's diction present during the duration of the lecture was captured precisely within the transcript by generating an analysis report.</p>
+          </p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="year">2020</div>
+        <div class="content">
+          <h2>Carlin Fit</h2>
+          <h3>SWE INTERN</h3>
+          <p>Implemented the mobile app (Android, IOS) to be paired with the hardware component of the Purple Bug UV light cleaning product. Worked with BLE communication libraries in Swift and Kotlin.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="year">2021</div>
+        <div class="content">
+          <h2>The RealReal</h2>
+          <h3>SWE INTERN</h3>
+          <p>As part of the seller tribe/team, implemented and assisted the development of the GPN(Get-Paid-Now) seller/consignor program. Developed backend services in Elixir and corresponding frontend client in Ruby Rails.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="year">2022</div>
+        <div class="content">
+          <h2>The RealReal</h2>
+          <h3>Entry-Level SWE</h3>
+          <p>Part of the seller growth team and developed using technologies -- Elixir, Ruby, Typescript/React, GraphQL, Kafka. Produced performant and testable code that directly contributed to company-wide initiatives. Reviewed pull requests and provided constructive feedback to peers & deployed user-facing code to production.</p>
+        </div>
+      </div>
+    </div>    
   </div>
 </section>
 
@@ -194,23 +303,12 @@
       <h6>Few of my projects</h6>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-img has-margin-right">
-        <img src="img/chess3.png" alt="">
-      </div>
-      <div class="portfolio-description">
-        <h6>JavaScript</h6>
-        <h1>Chess</h1>
-        <p>A chess game engine built using JavaScript,HTML and CSS.</p>
-        <a href="https://r0y09.github.io/chess/" target="_blank" class="cta">Demo</a>
-      </div>
-    </div>
-    <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
         <h6>JavaScript</h6>
         <h1>Snake</h1>
         <p>A snake game engine built using
           JavaScript(VueJS), HTML and CSS.</p>
-        <a href="https://r0y09.github.io/snake/" target="_blank" class="cta">Demo</a>
+        <!-- <a href="https://r0y09.github.io/snake/" target="_blank" class="cta">Demo</a> -->
       </div>
       <div class="portfolio-img has-margin-right">
         <img src="img/snake2.png" alt="">
@@ -225,7 +323,7 @@
         <h1>Rock-Paper-Scissors</h1>
         <p>A Minimax algorithm based Rock-Paper-Scissors engine
           implemented using JavaScript, HTML and CSS.</p>
-        <a href="https://r0y09.github.io/rock-paper-scissors/" target="_blank" class="cta">Demo</a>
+        <!-- <a href="https://r0y09.github.io/rock-paper-scissors/" target="_blank" class="cta">Demo</a> -->
       </div>
     </div>
     <div class="portfolio-item">
@@ -234,7 +332,7 @@
         <h1>Tic-Tac-Toe</h1>
         <p>A Minimax algorithm based Tic-Tac-Toe engine
           implemented using JavaScript, HTML and CSS.</p>
-        <a href="https://r0y09.github.io/package/" target="_blank" class="cta">Demo</a>
+       <!-- <a href="https://r0y09.github.io/package/" target="_blank" class="cta">Demo</a> -->
       </div>
       <div class="portfolio-img">
         <img src="img/xando2.png" alt="">
@@ -346,12 +444,11 @@
   <div class="container">
     <div class="section-heading">
       <h1>Undergraduate Research</h1>
-      <h6>Few of my undergraduate research papers</h6>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description">
         <h1>Deanonymization and Denial-Of-Service Attacks Against Decentralized Networks</h1>
-        <p>A research paper exploring vulnerabilities of and exploits against the Tor Network.</p>
+        <p>Research paper exploring vulnerabilities of the Tor Network and potential exploits.</p>
         <a href="img/CprE530_paper.pdf" target="_blank" class="cta">View the Paper</a>
       </div>
     </div>
