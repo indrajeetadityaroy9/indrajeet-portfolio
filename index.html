@@ -45,21 +45,6 @@ setInterval(displayWord, 1000);
   <style>
 		.image-container {
 			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 20vh;
-		}
-
-		.image-box {
-			width: 400px;
-			height: 250px;
-			background-image: url("img/me3.png");
-			background-position: center;
-			background-size: cover;
-			border: 2px solid black;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-			margin-right: 20px;
 		}
 
     .intro-content {
@@ -69,8 +54,9 @@ setInterval(displayWord, 1000);
 		}
 
 		.text-box {
-			margin-left: 20px;
-      margin-right: 100px;
+			margin-left: 50px;
+      margin-right: 50px;
+      justify-content: center;
 		}
 
 		h1 {
@@ -84,10 +70,15 @@ setInterval(displayWord, 1000);
 			margin: 0;
 		}
 
-    .social-media-icons {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+    .image-box {
+      margin-top: 10px;
+			width: 400px;
+			height: 250px;
+			background-image: url("img/me3.png");
+			background-position: center;
+			background-size: cover;
+			border: 2px solid black;
+			border-radius: 10px;
 		}
 
 		.social-media-icons a {
@@ -96,7 +87,7 @@ setInterval(displayWord, 1000);
 			height: 40px;
 			border-radius: 50%;
       margin-top: 30px;
-			text-align: center;
+      margin-left: -40px;
 			line-height: 40px;
 			color: white;
 		}
@@ -191,8 +182,6 @@ p {
       <h1>ABOUT ME</h1>
       <h6>A little bit about myself</h6>
     </div>
-    <div class="my-interests">
-      <div class="interest">
     <div class="image-container">
       <div class="image-box"></div>
       <div class="text-box">
@@ -203,8 +192,8 @@ p {
             been working as an Entry-Level SWE at The RealReal for the past year. 
             <br>
             <br>
-            My goal is to gain knowledge, expertise and experience 
-            in order to continue to grow professionally and build innovative solutions.</p>
+            My goal is to gain knowledge and experience 
+            in order to continue professional growth, build innovative solutions and work with interesting people.</p>
         </div>
         <div class="social-media-icons">
           <ul>
@@ -225,8 +214,6 @@ p {
             </li>
           </ul>
         </div>
-      </div>
-      </div>
       </div>
     </div>
     
