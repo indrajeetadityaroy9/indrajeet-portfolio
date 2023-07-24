@@ -3,167 +3,49 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#fafafa">
+  
+  <title></title>
 
+  <!-- Open Graph Metadata -->
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <!-- Favicons and Touch Icons -->
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
 
-  <meta name="theme-color" content="#fafafa">
-
+  <!-- Scripts -->
   <script>
-    const words = ["Hello, World!", "Hola, Mundo!", "Bonjour, monde!", "مرحبا, بالعالم!", "你好，世界!", "Привет, мир!", "Hallo, Welt!"];
-let index = 0;
+      const words = ["Hello, World!", "Hola, Mundo!", "Bonjour, monde!", "مرحبا, بالعالم!", "你好，世界!", "Привет, мир!", "Hallo, Welt!"];
+      let index = 0;
 
-function displayWord() {
-  document.getElementById("word").innerHTML = words[index];
-  index++;
-  if (index === words.length) {
-    index = 0;
-  }
-}
+      function displayWord() {
+          document.getElementById("word").innerHTML = words[index];
+          index++;
+          if (index === words.length) {
+              index = 0;
+          }
+      }
 
-setInterval(displayWord, 1000);
+      setInterval(displayWord, 1000);
   </script>
-
-  <style>
-		.image-container {
-			display: flex;
-		}
-
-    .intro-content {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		.text-box {
-			margin-left: 50px;
-      margin-right: 50px;
-      justify-content: center;
-		}
-
-		h1 {
-			font-size: 32px;
-			margin: 0 0 10px;
-		}
-
-		p {
-			font-size: 18px;
-			line-height: 1.5;
-			margin: 0;
-		}
-
-    .image-box {
-      margin-top: 10px;
-			width: 400px;
-			height: 250px;
-			background-image: url("img/me2.jpeg");
-			background-position: center;
-			background-size: cover;
-			border: 2px solid black;
-			border-radius: 10px;
-		}
-
-		.social-media-icons a {
-			display: inline-block;
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-      margin-top: 30px;
-      margin-left: -40px;
-			line-height: 40px;
-			color: white;
-		}
-
-.timeline {
-  position: relative;
-  margin-left: 100px; /* adjust this value to change the position of the timeline line */
-}
-
-.entry {
-  position: relative;
-  margin-bottom: 100px; /* adjust this value to change the spacing between entries */
-}
-
-.year {
-  position: absolute;
-  top: 0;
-  left: -100px; /* adjust this value to change the distance of the year from the timeline line */
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #333;
-  margin-left: 68px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.content {
-  margin-left: 150px; /* adjust this value to change the distance of the content from the timeline line */
-}
-
-h2 {
-  margin-top: 0;
-  font-size: 24px;
-}
-
-h3 {
-  margin-top: 10px;
-  font-weight: 200;
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-p {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-size: 18px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 100%;
-  background-color: #333;
-}
-
-#word {
-  font-size: 10rem;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Work Sans', sans-serif;
-  background:black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 1rem;
-}
-    
-	</style>
 </head>
-
 <body>
 <header>
   <div class="landing-text">
@@ -186,8 +68,7 @@ p {
       <div class="image-box"></div>
       <div class="text-box">
         <div class="intro-content">
-          <p>I'm Indrajeet Aditya Roy and welcome to my portfolio! I'm a fullstack software 
-            engineer with an emphasis on backend development looking to build innovative & scalable solutions, 
+          <p>I'm a fullstack software engineer with an emphasis on backend development looking to build innovative & scalable solutions, 
 	    gain professional experience and work with interesting people! 
             <br>
             <br>
@@ -234,9 +115,7 @@ p {
         <div class="content">
           <h2>Iowa State University ELO</h2>
           <h3>Student Employee</h3>
-          <p>Assisted instructors with setting up classes, captured classroom content, provided instructors with technical support, and made sure that notes were uploaded to CyBox properly with quality.
-          <br>
-          <p>Using Echo 360 to edit transcripts for recorded lectures. Generated language and speech analysis reports ensuring professors instructions were legible and audible.</p>
+          <p>Assisted instructors with setting up classes, captured classroom content, provided technical support to instructors, and ensured that notes were uploaded to Dropbox with quality. Used Echo 360 to edit transcripts for recorded lectures and generated language and speech analysis reports to ensure professors' instructions were legible and audible.</p>
           </p>
         </div>
       </div>
@@ -244,7 +123,7 @@ p {
         <div class="year">2020</div>
         <div class="content">
           <h2>Carlin Fit</h2>
-          <h3>Software Engineer Intern</h3>
+          <h3>Software Engineering Intern</h3>
           <p>Developed iOS and Android mobile companion app for communication and pairing with the UV light hardware component of Purple-Bug UV light ride-share cleaning product. Implemented iOS app using Swift, android app using Java/Kotlin and backend API services using Python. Beta versions of the Android/iOS platforms were fully functioning with a user-friendly UI, efficient data persistence and store, and stable communication with the hardware component.</p>
         </div>
       </div>
@@ -252,8 +131,8 @@ p {
         <div class="year">2021</div>
         <div class="content">
           <h2>The RealReal</h2>
-          <h3>Software Engineer Intern</h3>
-          <p>Built backend and frontend workflows for the GPN(Get Paid Now) customer program. Developed backend API services in Elixir, Ruby Rails and frontend client in React.
+          <h3>Software Engineering Intern</h3>
+          <p>Built backend and frontend workflows for the GPN(Get Paid Now) user program. Developed backend API services using Elixir & Ruby Rails and frontend clients using React.
           <br>
           <p>Refactored/Migrated consignor workflow client pages from Elixir Phoenix using React (Redux for state management, Axios for API interaction and Apollo for GraphQL querying)</p>
           </p>
@@ -264,7 +143,9 @@ p {
         <div class="content">
           <h2>The RealReal</h2>
           <h3>Software Engineer</h3>
-          <p>Built internal employee tooling and customer facing product workflows(Backend API services and frontend clients). Used tech stack including Elixir, Python, Ruby Rails, Javascript, Typescript, React, GraphQL, Elasticsearch, Okta, OAuth2.0, AWS Cloud tools (EC2, RDS, S3, SQS), Docker, Docker-compose and DB systems (RDMS (MySQL, PostgreSQL) and NoSQL(DynamoDB, Redis)). Reviewed & deployed PR's, implemented code unit test coverage via CI/CD automation and tracked team project tasks using Github. Sprint planning and story/ticket pointing using Jira.</p>
+          <p>Built internal organizational employee tools and customer facing product workflows(Backend API services and frontend clients).</p>
+            <br>
+            <p>Tech stack utilized included Elixir, Python, Ruby Rails, Javascript, Typescript, React, GraphQL, Elasticsearch, AWS Cloud tools (EC2, RDS, S3, SQS), Docker, Docker-compose and DB systems (RDMS (MySQL, PostgreSQL) & NoSQL(DynamoDB, Redis)). Reviewed & deployed PR's, implemented code unit test coverage via CI/CD automation and tracked team project tasks using Github. Sprint planning and story/ticket pointing using Jira.</p>
         </div>
       </div>
     </div>    
