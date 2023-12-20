@@ -19,7 +19,7 @@
   
   html {
     font-size: 10px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inconsolata', monospace;
     color: black;
   }
   
@@ -67,6 +67,7 @@
   }
   
   .section-heading h1{
+    letter-spacing: 2px;
     font-size: 3.5rem;
     color: black;
     text-transform: uppercase;
@@ -303,7 +304,7 @@
   
   .portfolio-description h1{
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 550;
     margin: 1rem 0;
   }
   
