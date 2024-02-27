@@ -9,15 +9,15 @@
             margin: 0;
             padding: 0;
         }
-        embed {
+        iframe {
             width: 100%;
             height: 100%;
-            border: none; /* Optional: removes any border around the embed */
+            border: none; /* Optional: removes any border around the iframe */
         }
     </style>
 </head>
 <body>
-    <embed id="pdfViewer" type="application/pdf">
+    <iframe id="pdfViewer" type="application/pdf"></iframe>
     <script>
         function getQueryVariable(variable) {
             var query = window.location.search.substring(1);
