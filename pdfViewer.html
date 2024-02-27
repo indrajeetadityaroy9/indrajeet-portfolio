@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>De-anonymization and Denial-Of-Service Attacks Against
-        the Tor Network</title>
+    <title id="dynamicTitle">Loading...</title>
     <style>
         html, body {
             height: 100%;
@@ -25,7 +24,7 @@
             for (var i = 0; i < vars.length; i++) {
                 var pair = vars[i].split("=");
                 if (pair[0] == variable) {
-                    return pair[1];
+                    return decodeURIComponent(pair[1].replace(/\+/g, " "));
                 }
             }
             return false;
@@ -33,9 +32,19 @@
 
         function loadPDF() {
             var pdfFileName = getQueryVariable("pdf");
+            var pageTitle = getQueryVariable("title");
+
             if (pdfFileName) {
                 var pdfPath = "img/" + pdfFileName + ".pdf";
                 document.getElementById('pdfViewer').setAttribute('src', pdfPath);
+            }
+
+            if (pageTitle) {
+                document.title = pageTitle;
+                document.getElementById('dynamicTitle').textContent = pageTitle;
+            } else {
+                document.title = "Default Title";
+                document.getElementById('dynamicTitle').textContent = "Default Title";
             }
         }
 
