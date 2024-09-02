@@ -6,16 +6,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 17px;
+    }
 }
 
 .text-box {
     margin-left: 50px;
-margin-right: 50px;
-justify-content: center;
+    margin-right: 50px;
+    justify-content: center;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 25px;
     margin: 0 0 10px;
 }
 
@@ -26,7 +32,7 @@ p {
 }
 
 .image-box {
-margin-top: 10px;
+    margin-top: 10px;
     width: 400px;
     height: 250px;
     background-image: url("/img/me2.jpeg");
@@ -41,77 +47,87 @@ margin-top: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-margin-top: 30px;
-margin-left: -40px;
+    margin-top: 30px;
+    margin-left: -40px;
     line-height: 40px;
     color: white;
 }
 
 .timeline {
-position: relative;
-margin-left: 100px; /* adjust this value to change the position of the timeline line */
+    position: relative;
+    margin-left: 100px; /* Keeps the left spacing for the entire timeline */
 }
 
 .entry {
-position: relative;
-margin-bottom: 100px; /* adjust this value to change the spacing between entries */
+    position: relative;
+    margin-bottom: 25px; /* Reduced from 100px to decrease the space between entries */
 }
 
 .year {
-position: absolute;
-top: 0;
-left: -100px; /* adjust this value to change the distance of the year from the timeline line */
-width: 70px;
-height: 70px;
-border-radius: 50%;
-background-color: #333;
-margin-left: 68px;
-color: #fff;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 24px;
-font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: -100px; /* Sets the year label to the left of the timeline */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-left: 68px; /* Margin from the central timeline */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .content {
-margin-left: 150px; /* adjust this value to change the distance of the content from the timeline line */
+    margin-left: 150px; /* Space for content from the timeline center */
 }
 
-h2 {
-margin-top: 0;
-font-size: 24px;
+h2, h3 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 10px; /* Adjusted spacing between the heading and sub-heading */
 }
 
 h3 {
-margin-top: 10px;
-font-weight: 200;
-font-size: 22px;
-margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 p {
-margin-top: 10px;
-margin-bottom: 0;
-font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 15px;
 }
 
 .timeline::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 5px;
-height: 100%;
-background-color: #333;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #333;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    left: -5px; /* Centers the endpoint over the timeline */
+    bottom: 0; /* Position at the bottom of the timeline */
+    width: 15px; /* Width of the circle */
+    height: 15px; /* Height of the circle */
+    background-color: #333; /* Same color as the timeline */
+    border-radius: 50%; /* Makes it circular */
+    display: block;
 }
 
 #word {
-font-size: 10rem;
-font-family: 'Inter', sans-serif;
-font-family: 'Work Sans', sans-serif;
-background:black;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-padding: 1rem;
+    font-size: 10rem;
+    font-family: 'Inter', sans-serif;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
 }

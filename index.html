@@ -1,176 +1,125 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
+  <meta name="description" content="Indrajeet's portfolio showcasing projects and skills.">
   <meta name="theme-color" content="#fafafa">
   <title>Indrajeet's Portfolio</title>
   <link rel="icon" href="img/icons8-world-96.png" type="image/x-icon">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
-  </style>
-
-  <!-- Fonts -->
-  <!-- Scripts -->
-  <script>
-      const words = [
-    "Hello, World!", // English
-    "Hola, Mundo!", // Spanish
-    "Bonjour, monde!", // French
-    "مرحبا, بالعالم!", // Arabic
-    "你好，世界！", // Chinese
-    "Привет, мир!", // Russian
-    "Hallo, Welt!", // German
-    "안녕, 세계!", // Korean
-    "Ciao, Mondo!", // Italian
-    "Olá, Mundo!", // Portuguese
-    "こんにちは、世界！", // Japanese
-    "Hallo, Wereld!", // Dutch
-    "Hej, världen!", // Swedish
-    "नमस्ते, दुनिया!", // Hindi
-    "Merhaba, Dünya!", // Turkish
-    "Cześć, Świecie!", // Polish
-    "Hei, Verden!" // Norwegian
-];
-
-      let index = 0;
-
-      function displayWord() {
-          document.getElementById("word").innerHTML = words[index];
-          index++;
-          if (index === words.length) {
-              index = 0;
-          }
-      }
-
-      setInterval(displayWord, 1000);
-  </script>
+  <link href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap' rel='stylesheet'>
 </head>
-<body>
-<header>
-  <div class="landing-text">
-    <div id="word">
-    <h1></h1>
-  </div>
-    <div id="scroll-container">
-      <div id="scroll-text">Welcome to my portfolio.<div>
-    </div>
-  </div>
-</header>
 
-<section class="portfolio" id="portfolio">
-  <div class="container">
-    <div class="section-heading">
-      <h1>ABOUT ME</h1>
-      <h6>A little bit about myself</h6>
+<body>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const words = [
+      "Hello, World!", "Hola, Mundo!", "Bonjour, monde!", "مرحبا, بالعالم!",
+      "你好，世界！", "Привет, мир!", "Hallo, Welt!", "안녕, 세계!", "Ciao, Mondo!",
+      "Olá, Mundo!", "こんにちは、世界！", "Hallo, Wereld!", "Hej, världen!",
+      "नमस्ते, दुनिया!", "Merhaba, Dünya!", "Cześć, Świecie!", "Hei, Verden!"
+    ];
+
+    let index = 0;
+
+    function displayWord() {
+      document.getElementById("word").innerHTML = words[index];
+      index++;
+      if (index === words.length) {
+        index = 0;
+      }
+    }
+
+    setInterval(displayWord, 1000);
+  </script>
+  <script>
+    window.ga = function() { ga.q.push(arguments) };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview');
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <header>
+    <div class="landing-text">
+      <div id="word">
+        <h1></h1>
+      </div>
+      <div id="scroll-container">
+        <div id="scroll-text">Welcome to my portfolio 👋</div>
+      </div>
     </div>
-    <div class="image-container">
-      <div class="image-box"></div>
-      <div class="text-box">
-        <div class="intro-content">
-          <p> 👋 Hello there! I'm Indrajeet Aditya Roy, a fullstack software engineer and graduate student looking to build innovative scalable solutions, 
-      solve complex problems, gain professional experience and work with interesting people! 
-            <br>
-            <br>
-            I recieved a Bachelor of Science in Software Engineering with a focus in Data Science from Iowa State University in 2022.
-      <br>
-      <br>
-            I'm currently pursuing a Master of Science in Computer Engineering with a focus in Artificial Intelligence and Machine Learning at Northeastern University. </p>
-        </div>
-        <div class="social-media-icons">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/indrajeet-aditya-roy/" target="_blank" class="icon-link">
-                <i class="fab fa-linkedin" style="font-size:60px;color:#2867B2"></i>
-              </a>
-            </li>
-            <li>
-              <a href="img/Resume.pdf" target="_blank">
-                <i style="font-size:60px;color:black">📄</i>
-              </a>                  
-            </li>
-          </ul>
+  </header>
+
+  <section class="portfolio" id="about-me">
+    <div class="container">
+      <div class="image-container">
+        <div class="image-box"></div>
+        <div class="text-box">
+          <div class="intro-content">
+            <p>I'm Indrajeet Aditya Roy, a full-stack software engineer and graduate student keen on building innovative scalable solutions, solving complex problems, gaining professional experience, and collaborating with interesting people. I earned my BS in Software Engineering with a focus in Data Science from Iowa State University in 2022.</p>
+
+<p>I'm currently pursuing a MS in Computer Engineering, specializing in Artificial Intelligence and Machine Learning, at Northeastern University. My academic and professional journeys are driven by a passion for applying software in real-world applications and continuously evolving and improving my skillset.</p>
+          </div>
+          <div class="social-media-icons">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/indrajeet-aditya-roy/" target="_blank" class="icon-link">
+                  <i class="fab fa-linkedin" style="font-size:60px;color:#2867B2"></i>
+                </a>
+              </li>
+              <li>
+                <a href="img/Resume.pdf" target="_blank">
+                  <i style="font-size:60px;color:black">📄</i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    
-  </div>
-</section>
+  </section>
 
 <section class="experience" id="experience">
   <div class="container">
-    <div class="section-heading">
-      <h1>Experience</h1>
-      <h6>A little bit about my work experience</h6>
-    </div>
     <div class="timeline">
-      <div class="entry">
-        <div class="year">2018</div>
-        <div class="content">
-          <h2>Iowa State University</h2>
-          <h3>Student Employee</h3>
-          <p>Collaborated with diverse student teams across various dining center departments.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="year">2019</div>
-        <div class="content">
-          <h2>Iowa State University</h2>
-          <h3>Student Employee</h3>
-          <p>Supported instructors with class setups, recorded classroom content, and offered technical assistance. Ensured quality notes were uploaded to Dropbox. Utilized Echo 360 for transcript editing and produced speech analysis reports to verify the clarity and audibility of professors' instructions.</p>
-        </div>
-      </div>
       <div class="entry">
         <div class="year">2020</div>
         <div class="content">
-          <h2>Carlin Fit</h2>
-          <h3>Software Engineer Intern</h3>
-          <p>Developed companion app for Android platform to interface with the UV light hardware device component of the Purple-Bug UV ride-share cleaning product. Implemented Android app using Java (Android SDK, Retrofit, Glide, Room, RxJava, Coroutines).</p>
+          <h3>Carlin Fit - Software Engineer Intern</h3>
+          <p>Developed companion app for Android platform to interface with the UV light hardware device component of the Purple-Bug UV ride-share cleaning product. Implemented Android app using Java/Kotlin, Retrofit, Glide, Room, RxJava, and Coroutines.</p>
         </div>
       </div>
       <div class="entry">
         <div class="year">2021</div>
         <div class="content">
-          <h2>The RealReal</h2>
-          <h3>Software Engineer Intern</h3>
-          <p>Developed RESTful Ruby Rails and GraphQL Elixir API services enabling ecient and scalable CRUD operations; utilized AWS RDS for data store,
-            Redis caching for data access optimization, and Kafka message broker for distributed inter-service communication, implementing the ‘Get Paid Now’
-            user program</p>
-          <p>Implemented configuration and administrative control dashboard in Ruby Rails, streamlining admin management of user program</p>
-          <div class="portfolio-item">
-            <div class="portfolio-description has-margin-right">
-              <a href="https://www.therealreal.com/sell-trr?reg_gate=true" target="_blank" class="cta">SAMPLE</a>
-            </div>
-          </div>
+          <h3>The RealReal - Software Engineer Intern</h3>
+          <p>Developed RESTful Ruby Rails and GraphQL Elixir API services implementing efficient and scalable CRUD operations; utilized AWS RDS for data store,
+            Redis caching for data access optimization, and Kafka messaging for distributed event driven inter-service communication, implementing configuration and administrative control dashboard for the Get Paid Now
+            user program, streamlining admin management of user program.</p>
         </div>
       </div>
       <div class="entry">
         <div class="year">2022</div>
         <div class="content">
-          <h2>The RealReal</h2>
-          <h3>Software Engineer</h3>
+          <h3>The RealReal - Software Engineer</h3>
           <p>Built internal organization employee productivity tools and user product features (API services, Data pipelines/tools and Frontend clients).</p>
           <p>Tech stack utilized Elixir, Python, Ruby Rails, Javascript, Typescript, React (Redux, Redux-toolkit, Axios, Apollo), GraphQL, Elasticsearch, Kafka, Grafana, Datadog, Bugsnag, AWS Cloud tools (EC2, RDS, S3, SQS), Docker, Docker-compose and DB systems (RDMS (MySQL, PostgreSQL) & NoSQL (DynamoDB, Redis)). Reviewed & deployed PRs, dockerized development environment setup, implemented code test coverage, CI/CD automation via Github actions. Sprint planning and story/ticket pointing using Jira.</p>
-          <div class="portfolio-item">
-            <div class="portfolio-description has-margin-right">
-              <a href="https://www.therealreal.com/getpaidnow" target="_blank" class="cta">SAMPLE</a>
-            </div>
-          </div>
         </div>
       </div>
       <div class="entry">
         <div class="year">2024</div>
         <div class="content">
-          <h2>Amwell</h2>
-          <h3>Software Engineer Intern</h3>
+          <h3>Amwell - Software Engineer Intern</h3>
           <p>Integrated Validic with Amwell Conversa health platform enabling EHR data synchronization from health monitoring apps and devices into user
             automated healthcare conversations, improving user engagement and care with data driven personalization and analysis </p>
           <p>Developed RESTful Ruby Rails API services for interfacing with Validic API, utilized Apache Spark for large EHR datasets processing, and AWS DynamoDB for processed data store and utilization</p>
@@ -187,18 +136,16 @@
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description">
-        <h1>Mitigation Techniques Against Deanonymization and Denial-of-Service (DoS) Attacks In Decentralized Networks</h1>
+        <h1>Mitigating Deanonymization and DoS Attacks in Decentralized Networks <a href="pdfViewer.html?pdf=CprE530_paper&title=Mitigation Techniques Against Deanonymization and Denial-of-Service (DoS) Attacks In Decentralized Networks" target="_blank" class="cta">View Paper</a></h1>
         <p>Analysis of attack vectors and Tor network architecture vulnerabilities focusing on deanonymization and Denial-of-Service (DoS) attacks in
           decentralized networks and mitigating strategies to safeguard anonymity and maintain network integrity.</p>
-        <a href="pdfViewer.html?pdf=CprE530_paper&title=Mitigation Techniques Against Deanonymization and Denial-of-Service (DoS) Attacks In Decentralized Networks" target="_blank" class="cta">View Paper</a>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description">
-        <h1>Enhancing Research Paper Summarization Through Advanced Language Techniques: Integrating Abstractive Methods, Fine-tuning Large Language Models, and Retrieval-Augmented Generation</h1>
+        <h1>Enhancing Research Paper Summarization Through Advanced Language Techniques: Integrating Abstractive Methods, Fine-tuning Large Language Models, and Retrieval-Augmented Generation <a href="pdfViewer.html?pdf=Report&title=Enhancing Research Paper Summarization Through Advanced Language Techniques: Integrating Abstractive Methods, Fine-tuning Large Language Models, and Retrieval-Augmented Generation Technology" target="_blank" class="cta">View Paper</a></h1>
         <p>Enhancement of academic journal summarization precision and comprehension by integrating language model fine-tuning methodologies such as
           Parameter-Ecient Fine-Tuning (PEFT) and Low-Rank Adaptation (LoRA) with Retrieval-Augmented Generation (RAG).</p>
-        <a href="pdfViewer.html?pdf=Report&title=Enhancing Research Paper Summarization Through Advanced Language Techniques: Integrating Abstractive Methods, Fine-tuning Large Language Models, and Retrieval-Augmented Generation Technology" target="_blank" class="cta">View Paper</a>
       </div>
     </div>
   </div>
@@ -207,91 +154,74 @@
 <section class="portfolio" id="portfolio">
   <div class="container">
     <div class="section-heading">
-      <h1>Portfolio</h1>
-      <h6>Few of my projects</h6>
+      <h1>Projects</h1>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>An NLP Approach to Sumerian Translation</h1>
-        <p>This project utilizes Natural Language Processing (NLP) methods to enhance the translation of ancient and low-resource languages. Specifically, it targets two significant challenges: creating functional classification-translation models for transliterations between Sumerian and English, and the development of a Named Entity Recognition (NER) model to address lexical gaps in English caused by the translation of Sumerian language specific proper nouns.</p>
-        <a href="pdfViewer.html?pdf=Cs6120_paper&title=An Natural Language Processing Approach to Sumerian Translation" target="_blank" class="cta">View Paper</a>
+        <h1>NLP-Enhanced Sumerian-English Translation: Classification and NER Techniques <a href="pdfViewer.html?pdf=Cs6120_paper&title=An Natural Language Processing Approach to Sumerian Translation" target="_blank" class="cta">View Paper</a></h1>
+        <p>Application of Natural Language Processing (NLP) techniques to improve the translation accuracy of ancient and low-resource languages, specifically focusing on two primary technical challenges: the development of classification-translation models that facilitate transliterations between Sumerian and English, and a Named Entity Recognition (NER) model designed to bridge lexical gaps in English originating from the unique properties of Sumerian-specific proper nouns. The project aims to enhance translational accuracy and enrich the semantic understanding of translated texts.</p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>Reinforcement Learning Approach for Complex Maze Navigation and Spatial Decision Making</h1>
-        <p>Application of Q-Learning, SARSA, and Actor-Critic RL algorithms within a OpenAI Gym grid-based maze environment. The simulation includes complex elements such as walls, bumps, and oil slicks, within a state space of 248 navigable cells. The implementations utilize TensorFlow and PyTorch to develop neural network approximations for the algorithms, enhancing the decision-making capabilities of the agents in a stochastic environment. The algorithms are evaluated across 10 independent runs with 1,000 episodes each, focusing on optimizing paths and maximizing rewards under a defined penalty and reward system. This setup tests each algorithm's efficacy in achieving the highest cumulative rewards and successfully and optimally navigating to the goal.
-          </p>
+        <h1>Reinforcement Learning in Complex Route Navigation and Spatial Decision Making</h1>
+        <p>Application of Q-Learning, SARSA, and Actor-Critic RL algorithms in a grid-based maze environment. The simulation includes complex elements such as walls, bumps, and oil slicks, within a state space of 248 navigable cells. The implementations utilize PyTorch to develop neural network approximations for the algorithms, enhancing the decision-making capabilities of the agents in a stochastic environment. The algorithms are evaluated across 10 independent runs with 1,000 episodes each, focusing on optimizing paths and maximizing rewards under a defined penalty and reward system. This setup evaluates each algorithm's efficacy in achieving the highest cumulative rewards and successfully and optimally navigating to the goal.</p>
         <a href="img/Report2.pdf" target="_blank" class="cta">View Report</a>
       </div>
       <div class="portfolio-img has-margin-right">
         <img src="img/Screenshot 2024-05-17 at 3.33.16 PM.png" alt="" width="600" height="400">
       </div>
-    
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>Optimal Control Policy for the p53-Mdm2 Feedback Loop Using Reinforcement Learning: Towards Enhanced Cancer Therapeutics</h1>
-        <p>The p53-Mdm2 negative feedback loop plays a pivotal role in regulating the cell cycle and suppressing tumor formation contributing to significant developments in cancer therapy and new treatment strategies. This project proposes to harness reinforcement learning to fine-tune the activation of this network's components, thereby ensuring the p53 pathway remains active. This could inhibit tumor growth and enhance cellular repair mechanisms.
-          The primary objective is to determine optimal control policy that manages the p53-Mdm2 feedback loop effectively, optimizing the activation of its constituents (ATM, p53, Wip1, MDM2) to maintain them in an 'ON' state as consistently as possible. Achieving this state maximizes the therapeutic potential of keeping the p53 pathway active, offering a novel method to control complex cellular networks. 
-          </p>
-          <a href="https://github.com/indrajeetadityaroy9/EECE5698/blob/main/project2/q2.py" target="_blank" class="cta">Git Repository</a>
+        <h1>Reinforcement Learning in Cancer Research: Optimizing the p53-Mdm2 Feedback Loop <a href="https://github.com/indrajeetadityaroy9/EECE5698/blob/main/project2/q2.py" target="_blank" class="cta">Git Repository</a></h1>
+<p>The p53-Mdm2 negative feedback loop is crucial for cell cycle regulation and tumor suppression, playing a significant role in advancing cancer therapy and developing new treatment strategies. This project aims to employ reinforcement learning to finely adjust the activation of this network's key components, specifically ATM, p53, Wip1, and MDM2. The primary objective is to establish an optimal control policy that effectively manages the p53-Mdm2 feedback loop, maximizing the therapeutic efficacy of maintaining an active p53 pathway. By achieving and sustaining this optimal state, the implementation offers a novel approach to controlling complex cellular networks, potentially inhibiting tumor growth and enhancing cellular repair mechanisms.</p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>User Feedback Sentiment Analysis with Custom TF-IDF Vectorization Implementation</h1>
-        <p>Implementation of IMDb user movie reviews sentiment analysis, focusing on the development and evaluation of a custom TF-IDF vectorization technique compared to the standard sklearn implementation. The dataset consists of 50,000 reviews, preprocessed to remove noise and ensure uniformity, then split into train, test and development sets. employs a logistic regression model built using a feedforward neural network (FNN), with each model trained on features derived from both the custom and sklearn TF-IDF vectorizers. Key metrics such as accuracy and F1 score are utilized to evaluate the models, providing a detailed comparison of how custom vectorization influences sentiment classification effectiveness in text analysis.
-          </p>
-          <a href="https://github.com/indrajeetadityaroy9/Movie_review_sentiment_analysis" target="_blank" class="cta">Git Repository</a>
+        <h1>User Feedback Sentiment Analysis with Custom TF-IDF Vectorization Implementation <a href="https://github.com/indrajeetadityaroy9/Movie_review_sentiment_analysis" target="_blank" class="cta">Git Repository</a></h1>
+        <p>Implementation of sentiment analysis of IMDb user movie reviews, focusing on the development and comparative evaluation of a tailored TF-IDF vectorization technique against the standard sklearn implementation. The analysis utilizes a dataset of 50,000 reviews which are preprocessed to eliminate noise and standardize content.The reviews are then divided into training, testing, and development sets. A logistic regression model implemented within a feedforward neural network (FNN) processes features extracted using both the tailored and sklearn TF-IDF vectorizers. Performance of the models is measured using key metrics such as accuracy and the F1 score, providing analysis into the impact of tailored vectorization on the effectiveness of sentiment classification in text analysis.</p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>News Article Classifier with Custom K-Means Clustering Implementation</h1>
-        <p>Development and evaluation of a custom K-Means clustering algorithm tailored for text data, specifically applied to the 20 Newsgroups dataset. By leveraging a Term Frequency-Inverse Document Frequency (TF-IDF) vectorization approach, the project aims to organize text documents into clusters that enhance our understanding of inherent groupings based on content similarity. Utilizing the Scikit-learn library's KMeans as a benchmark, the project compares the custom implementation against established methods through a variety of metrics, including Homogeneity, Completeness, V-measure, Adjusted Rand Index, and Silhouette Coefficient. This comparison is essential for evaluating the fitness of the custom model in handling complex text data, focusing on improving clustering quality and execution efficiency.
-          </p>
-          <a href="https://github.com/indrajeetadityaroy9/News_article_classifier" target="_blank" class="cta">Git Repository</a>
+        <h1>News Article Classifier with Custom K-Means Clustering Implementation <a href="https://github.com/indrajeetadityaroy9/News_article_classifier" target="_blank" class="cta">Git Repository</a> </h1>
+        <p>Implementation and evaluation of the K-Means clustering algorithm for analyzing text data within the 20 Newsgroups dataset. By utilizing a Term Frequency-Inverse Document Frequency (TF-IDF) vectorization approach, the implementation aims to categorize text documents into clusters, enhancing the understanding of text content similarities. The custom algorithm implementation is benchmarked against the standard Scikit-learn KMeans to assess performance metrics such as Homogeneity, Completeness, V-measure, Adjusted Rand Index, and Silhouette Coefficient. These metrics are crucial for evaluating the custom model's effectiveness in handling complex textual data, with a focus on optimizing clustering quality and execution efficiency.</p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>Q-Learning with ε-Greedy Exploration</h1>
-        <p>Q-Learning with an ε-Greedy exploration strategy in an OpenAI Gym grid environment.
-          For efficient learning, utilized Stable Baselines, a set of improved implementations of reinforcement learning algorithms.TensorFlow and PyTorch were used to train and optimize CNNs for the approximation of the Q-function.The generation of a heatmap represents the optimal value function after 10,000 updates during the learning process which provides the value of each state after extensive training, demonstrating the areas of the grid environment where the agent learned to predict higher returns.
-          </p>
-      </div>
-      <div class="portfolio-img has-margin-right">
-        <img src="img/Screenshot 2024-01-03 at 8.09.36 AM.png" alt="">
+        <h1>Neural Network Optimization for Minimized Error Probabilistic Classification <a href="img/Project_report.pdf" target="_blank" class="cta">View Report</a> <a href="https://github.com/indrajeetadityaroy9/EECE5644/tree/main/assignment3/question1" target="_blank" class="cta">Git Repository</a></h1>
+<p>Development and optimization of Multilayer Perceptrons (MLPs) for classifying a 3-dimensional real-valued random vector into one of four classes with uniform priors. The main objective is to effectively approximate class label posteriors and to implement a Maximum A Posteriori (MAP) classification rule using the trained MLPs, achieving the lowest possible probability of error.</p>
+<p>The MLPs are trained using maximum likelihood parameter estimation, minimizing the average cross-entropy loss and enabling precise approximation of the class label posteriors. Post-training, the MLPs are utilized to implement a MAP classification rule aimed at minimizing the expected loss, using a binary loss function for correct and incorrect classification.</p>
+<p>The optimization process includes one hidden layer of perceptrons, with the optimal number of neurons determined via K-fold cross-validation and GridSearchCV. These methods are used to fine-tune the number of perceptrons and regularization, ensuring the model is appropriately scaled to the dataset size and complexity.</p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>Neural Network Optimization for Minimized Error Probabilistic Classification</h1>
-        <p>Development and optimization of a series of Multilayer Perceptrons (MLPs) for classifying a 3-dimensional real-valued random vector into one of four classes with uniform priors.The objective is to approximate class label posteriors effectively and implement a MAP classification rule using the trained MLPs to achieve the lowest possible probability of error.
-          MLPs are trained using maximum likelihood parameter estimation, equivalent to minimizing the average cross-entropy loss, to approximate the class label posteriors effectively.The trained MLPs are then used to approximate a MAP classification rule, aiming to minimize the expected loss with 0-1 loss assignments for correct and incorrect decisions.
-          The MLPs feature one hidden layer of perceptrons, with the best number determined through cross-validation. K-fold cross-validation and GridSearchCV are employed to identify the optimal number of perceptrons and regularization strength, tailored to the dataset size and complexity.
-          </p>
-        <a href="https://github.com/indrajeetadityaroy9/EECE5644/tree/main/assignment3/question1" target="_blank" class="cta">Git Repository</a>
-        <br>
-        <a href="img/Project_report.pdf" target="_blank" class="cta">View Report</a>
+        <h1>XML Data Warehouse for Pharmaceutical Sales Data Forecasting and Analysis <a href="https://github.com/indrajeetadityaroy9/xml_data_warehouse" target="_blank" class="cta">Git Repository</a></h1>
+<p>Implementation of a data warehouse for pharmaceutical sales which integrates sales representative details and transactional data. Utilizing ETL pipelines, the system efficiently extracts data from complex XML data structures and transforms it into a format suitable for MySQL DB integration.</p>
+<p>The architecture of the data warehouse is designed to support OLTP (Online Transaction Processing) for high transaction rates and immediate query handling, while also being optimized for OLAP (Online Analytical Processing) to facilitate complex analytical queries. This dual optimization ensures that the data warehouse can handle both day-to-day operations and provide deep analytical insights.</p>
+<p>Key project activities include designing a scalable database schema that accommodates growing data volumes and diverse datasets, and implementing data transformation processes that ensure data integrity and compatibility with enterprise analytics tools. The final component of the project focuses on data analysis and visualization, employing data analytics techniques to interpret the data, identify trends, and support decision-making processes in pharmaceutical sales strategies.</p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>Bayesian Vehicle Localization Optimization in 2D space via Range Measurements and MAP Estimation</h1>
-        <p>Application of MAP estimation in navigation and spatial data analysis, aimed at enhancing location accuracy in complex environments.The model localizes a vehicle in a 2D state space, combining range measurements to multiple landmarks with pre-existing positional knowledge to accurately estimate the vehicle's most probable location.
-          The model estimates the most probable (MAP) position of the vehicle based on noisy distance measurements to landmarks and prior knowledge of the vehicle's position,effectively navigating environmental complexities and measurement inaccuracies. 
-          </p>
-        <a href="https://github.com/indrajeetadityaroy9/EECE5644/tree/main/assignment2/question3" target="_blank" class="cta">Git Repository</a>
+        <h1>Unified File System Query Tool with Hierarchical DOM Analysis <a href="https://github.com/indrajeetadityaroy9/hierarchical-file-system" target="_blank" class="cta">Git Repository</a></h1>
+        <p>Development of a query tool to navigate Unix and Windows file systems, implementing a hierarchical document object model (DOM) for data store queries. It provides comprehensive file navigation and structured data querying capabilities across multiple operating systems, streamlining management of complex data structures. By interacting with file system APIs, the tool enables detailed search, file retrieval based on specific attributes, and query execution within hierarchical data structures. Its functionality supports a range of applications from data analysis to system management</p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-description has-margin-right">
+        <h1>API Triggered ETL Pipeline for CSV Processing <a href="https://github.com/indrajeetadityaroy9/user_experiments_data_etl_service" target="_blank" class="cta">Git Repository</a></h1>
+        <p>Implementation of an ETL pipeline to efficiently process and transform CSV files into actionable data points and features. Responsive to API calls, the system methodically extracts data from the CSV files, applies necessary transformations, and uploads the processed data to a relational database. This pipeline facilitates dynamic data management, supports data analysis and also provides scope for extended API integration.</p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-description has-margin-right">
+        <h1>Bayesian Vehicle Localization Optimization in 2D space via Range Measurements and MAP Estimation <a href="https://github.com/indrajeetadityaroy9/EECE5644/tree/main/assignment2/question3" target="_blank" class="cta">Git Repository</a></h1>
+        <p>Implementation of Maximum A Posteriori (MAP) estimation to enhance vehicle localization accuracy in 2D environments. The Bayesian model integrates range measurements to multiple landmarks with existing positional data, allowing for a highly accurate estimation of the vehicle's most probable location. By utilizing MAP estimation, the model effectively addresses noisy distance measurements and prior knowledge of the vehicle's position, ensuring precise navigation despite environmental complexities and measurement inaccuracies.</p>
       </div>
       <div class="portfolio-img has-margin-right">
         <img src="img/est1.png" alt="">
@@ -299,35 +229,11 @@
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>R, SQL</h6>
-        <h1>XML Data Warehouse (Pharmaceutical Sales Data Forecasting and Analysis)</h1>
-        <p>Data warehouse consisting of sales representative details and transactional data constructed from XML sources utilizing ETL pipelines. The primary objectives include extracting data from complex XML structures, transforming this data into a format compatible with relational databases, designing and implementing an OLTP (Online Transaction Processing) database schema, and establishing a data warehouse optimized for OLAP (Online Analytical Processing). Additionally, the project focuses on analyzing and visualizing the data within the warehouse to derive meaningful insights and trends from the sales information.</p>
-        <a href="https://github.com/indrajeetadityaroy9/xml_data_warehouse" target="_blank" class="cta">Git Repository</a>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h6>R</h6>
-        <h1>File Navigator & Hierarchical Datastore Query System</h1>
-        <p>R script to navigate Unix and Windows file systems and implement query structure for data store that utilize a hierarchical document object model. This tool aims to provide users with a comprehensive solution for file navigation and structured data querying across multiple platforms.</p>
-        <a href="https://github.com/indrajeetadityaroy9/hierarchical-file-system" target="_blank" class="cta">Git Repository</a>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>API-Triggered ETL Pipeline for CSV Data Processing</h1>
-        <p>An ETL pipeline that can process and transform a set of CSV files. Upon triggering via an API call, the pipeline will derive specific features and data points from these files and subsequently upload them to a database.</p>
-        <a href="https://github.com/indrajeetadityaroy9/user_experiments_data_etl_service" target="_blank" class="cta">Git Repository</a>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h6>JavaScript</h6>
-        <h1>Snake</h1>
-        <p>A game engine developed for the classic Snake game using
-          Vue.js, HTML and CSS.</p>
-        <a href="https://indrajeetadityaroy9.github.io/snake/" target="_blank" class="cta">Demo</a>
+        <h1>Snake <a href="https://indrajeetadityaroy9.github.io/snake/" target="_blank" class="cta">DEMO (TRY IT OUT!)</a></h1>
+        <p>Implementation of a game engine for the classic Snake game developed using VueJS and complemented by vanilla HTML and CSS.</p>
+    <br>
+    <p>Vue.js streamlines state management and facilitates real-time rendering of the game environment, ensuring dynamic updates are efficiently handled without reloading the browser. Utilized to implement dynamic management of the game state, including the snake's movement, collision detection, and score tracking. 
+      HTML is used to structure the core layout of the game, setting up a grid-based playing field where the snake moves. CSS is utilized to style the game board and snake elements implemeting color schemes, borders, and animations.</p>
       </div>
       <div class="portfolio-img has-margin-right">
         <img src="img/snake2.png" alt="">
@@ -338,20 +244,21 @@
         <img src="img/rockpaperscissors2.png" alt="">
       </div>
       <div class="portfolio-description">
-        <h6>JavaScript</h6>
-        <h1>Rock-Paper-Scissors</h1>
-        <p>Rock-Paper-Scissors game engine that utilizes the Minimax algorithm for simulating opponent moves and determining optimal strategies. 
-          Implemented using JavaScript, HTML and CSS.</p>
-        <a href="https://indrajeetadityaroy9.github.io/rock-paper-scissors/" target="_blank" class="cta">Demo</a>
+        <h1>Rock Paper Scissors <a href="https://indrajeetadityaroy9.github.io/rock-paper-scissors/" target="_blank" class="cta">DEMO (TRY IT OUT!)</a></h1>
+        <p>Implementation of a game engine for the classic Rock Paper Scissors game developed using Vanilla JavaScript, HTML and CSS.</p>
+    <br>
+    <p>The game engine implements the Minimax algorithm to simulate intelligent opponent moves and strategize optimal responses using JavaScript for the game logic, HTML for structuring the game UI, and CSS for response design, styling and animations.
+      The Minimax algorithm extends the game's interactivity by enabling the system opponent to make decisions that are strategically sound, mimicking human-like decision-making processes adding a challenge and realism to the game engine.</p>
+  </p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>JavaScript</h6>
-        <h1>Tic-Tac-Toe</h1>
-        <p>A Tic-Tac-Toe game engine employing the Minimax algorithm for optimal move generation and decision-making.
-          Implemented using JavaScript, HTML and CSS.</p>
-       <a href="https://indrajeetadityaroy9.github.io/package/" target="_blank" class="cta">Demo</a>
+        <h1>Tic-tac-toe <a href="https://indrajeetadityaroy9.github.io/tic-tac-toe/" target="_blank" class="cta">DEMO (TRY IT OUT!)</a></h1>
+        <p>Implementation of a game engine for the classic Tic-tac-toe game developed using Vanilla JavaScript, HTML and CSS.</p>
+        <p>The game engine implements the Minimax algorithm to simulate intelligent opponent moves and strategize optimal responses using JavaScript for the game logic, HTML for structuring the game UI, and CSS for response design, styling and animations.
+          The Minimax algorithm extends the game's interactivity by enabling the system opponent to make decisions that are strategically sound, mimicking human-like decision-making processes adding a challenge and realism to the game engine.</p>
+      </p>
       </div>
       <div class="portfolio-img">
         <img src="img/xando2.png" alt="">
@@ -359,52 +266,22 @@
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h6>Python</h6>
-        <h1>MSPaint replica</h1>
-        <p>A basic mspaint replica built using python, pygame and tkinter. Users can create and save new art works.
-          Additionally users can edit previously saved artworks. </p>
-          <a href="https://github.com/indrajeetadityaroy9/simplemspaint" target="_blank" class="cta">Git Repository</a>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h6>Java</h6>
-        <h1>Server Client Chatroom Application</h1>
-        <p> A localhost chat application which incorporates both client and server side.
-          User access to application is priveleged and filtered via password login. The messages from each client are broadcasted
-          by the server, so as to all logged-in clients can simultaneously recieve messages. </p>
-          <a href="https://github.com/indrajeetadityaroy9/localhost-chatroom" target="_blank" class="cta">Git Repository</a>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h6>C/C++</h6>
-        <h1>Sound Processor and Song Note compiler</h1>
-        <p>Sound note processing tool. Users can generate a variety of waveforms, such as Sine, Square, Triangle, and Sawtooth, by adjusting parameters like sample rate, frequency, and duration. Additionally, the platform allows users to overlay multiple audio signals, offering precise amplitude control and modulation capabilities, where the amplitude of one signal can influence another.</p>
+        <h1>Sound Processor and Song Note Compiler <a href="https://github.com/indrajeetadityaroy9/song_note_compiler" target="_blank" class="cta">Git Repository</a> </h1>
+        <p>Sound processing and song note compilation platform for real-time audio signal processing and synthesis developed using C and C++. It enables the generation of various waveforms—including Sine, Square, Triangle, and Sawtooth—through user-adjustable parameters such as sample rate, frequency, and duration.</p>
         <br>
-        <p>Users can produce a range of sound effects with digital filters. A notable feature is the digital reverb filter, introducing short-lived echoes to emulate different acoustic environments. An integrated song player enables users to decode specific file formats, outputting a sequence of samples for playback, providing opportunities for further sound manipulation.</p>
-        <a href="https://github.com/indrajeetadityaroy9/song_note_compiler" target="_blank" class="cta">Git Repository</a>
+        <p>The platform supports complex audio signal layering, allowing users to overlay multiple audio signals with precision. This includes detailed amplitude control and modulation, where the amplitude of one signal can dynamically influence others. Advanced digital filters, such as a digital reverb filter, create short-lived echoes to simulate different acoustic environments effectively.</p>
+        <br>
+        <p>An integral component of the system is its song player functionality, implemented using C to optimize performance. It decodes various audio file formats, arranging the decoded samples into a seamless playback sequence that can be further manipulated for sound design or educational purposes. This functionality highlights the system’s capability to handle complex audio processing tasks efficiently.</p>
       </div>
-    </div>
+    </div>    
     <div class="portfolio-item">
       <div class="portfolio-description">
-        <h6>Kotlin Swift Java</h6>
         <h1>Purple Bug Mobile Companion App</h1>
-        <p>Summer 2020 Internship Project.
-          <br>
-          <br>
-          Mobile companion app to be paired with the hardware
-          component of the purple bug ride-share vehicle cleaning product.
-          Let users perform and schedule cleaning tasks with the UV light germ cleaning hardware component
-    (Similar to a roomba performing scheduled cleaning tasks).
-    As part of the software dev team worked on the task scheduling
-          feature and hardware communication feature of the iOS app. Additionally,
-          assisted in the development of a ground up design for a beta android platform and
-          worked on the implementation.By the end of the internship period,
-          the Beta versions of the Android and iOS platforms were fully functional
-          with a user friendly intuitive client UI, efficient data persistence and store, and
-          persistant communication with the hardware component via bluetooth.</p>
-      </div>
+        <p>Summer 2020 Internship Project<br><br>
+          Android companion app to interface with the UV light hardware device component of the Purple-Bug UV ride-share cleaning product.<br><br>
+          The Android mobile app was developed using Java and Kotlin, providing a stable and responsive UI. Network communications were implemented using Retrofit, which handled data transmission between the mobile app and backend services effectively. Image loading and caching were optimized using Glide to enhance performance and user experience.
+          Local data storage was implemented using Room, which offers an abstraction layer over SQLite, simplifying database operations. Complex asynchronous tasks were managed using RxJava and Kotlin Coroutines, ensuring smooth operation of the app by executing background tasks without interfering with the user interface.<br><br></p>
+      </div>    
     </div>
     <div class="portfolio-item">
       <div class="portfolio-img has-margin-right">
@@ -415,31 +292,6 @@
       </div>
       <div class="portfolio-img has-margin-right">
         <img src="img/purple_bug_2.png" alt="">
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h6>C/C++</h6>
-        <h1>Autonomous Mars Rover</h1>
-        <p>A roomba programmed to navigate an obstacle course autonomously via distance measuring, depth perception and obstacle detection.</p>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h6>Kotlin Java</h6>
-        <h1>Music sharing platform (MusicCircle)</h1>
-        <p></p>
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-img has-margin-right">
-        <img src="img/music_circle_1.png" alt="">
-      </div>
-      <div class="portfolio-img has-margin-right">
-        <img src="img/music_circle_2.png" alt="">
-      </div>
-      <div class="portfolio-img has-margin-right">
-        <img src="img/music_circle_3.png" alt="">
       </div>
     </div>
   </div>
