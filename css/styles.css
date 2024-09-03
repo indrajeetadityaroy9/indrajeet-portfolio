@@ -33,9 +33,9 @@ p {
 
 .image-box {
     margin-top: 10px;
-    width: 400px;
+    width: 500px;
     height: 250px;
-    background-image: url("/img/me2.jpeg");
+    background-image: url("/img/me.png");
     background-position: center;
     background-size: cover;
     border: 2px solid black;
