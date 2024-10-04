@@ -6,7 +6,6 @@
 
 html {
   font-size: 10px;
-  font-family: Söhne, sans-serif;
   font-feature-settings: normal;
   tab-size: 4;
   color: black;
@@ -20,12 +19,7 @@ body {
 }
 
 section {
-  padding: 3rem 0; /* Reduced from 6rem to 3rem */
-}
-
-a {
-  text-decoration: none;
-  color: #eee;
+  padding: 3rem 0;
 }
 
 li {
@@ -36,10 +30,7 @@ li {
 p {
   font-size: 2rem;
   font-weight: 300;
-}
-
-img {
-  width: 100%;
+  font-family: Söhne, sans-serif;
 }
 
 .container {
@@ -52,7 +43,7 @@ img {
 
 .section-heading {
   text-align: center;
-  margin-bottom: 2rem; /* Reduced from 10rem to 5rem */
+  margin-bottom: 2rem;
 }
 
 .section-heading h1 {
@@ -89,18 +80,9 @@ img {
   bottom: -1rem;
 }
 
-.section-heading h6 {
-  font-size: 1.6rem;
-  font-weight: 300;
-}
-
-.has-margin-right {
-  margin-right: 3rem; /* Reduced from 5rem to 3rem */
-}
-
 header {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 }
 
 .landing-text {
@@ -137,7 +119,7 @@ header {
   top: 50%;
   height: 100px;
   width: 1000px;
-  margin-left: -100px; /* half of your width */
+  margin-left: -100px;
   margin-top: 100px;
 }
 
@@ -146,7 +128,6 @@ header {
   margin-top: 30px;
   font-size: 5rem;
   font-weight: 300;
-  /* animation properties */
   -moz-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -184,20 +165,30 @@ header {
 .portfolio-item {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensure space between text and image */
+  justify-content: space-between;
   margin-bottom: 2rem;
-  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+  flex-wrap: wrap;
 
   a {
     font-size: 20px;
     font-family: 'Inconsolata', sans-serif;
     color: blue;
+    text-decoration: none;
   }
 }
 
 .portfolio-description {
   flex: 1; /* Takes up the remaining space */
   margin-right: 2rem; /* Ensures some space between the text and the image */
+}
+
+.portfolio-description h1{
+  font-family: Unica77llweb, sans-serif;
+  font-size: 25px;
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-family: Unica77llweb, sans-serif;
+  font-weight: 500;
 }
 
 .portfolio-img {
@@ -230,6 +221,167 @@ header {
   .portfolio-description, .portfolio-img {
     flex: 1 0 100%; /* Makes each take full width on smaller screens */
     margin-right: 0; /* Removes right margin on smaller screens */
+  }
+}
+
+.image-container {
+  display: flex;
+}
+
+.intro-content {
+  p {
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 19px;
+  }
+}
+
+.text-box {
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.image-box {
+  margin-top: 10px;
+  width: 600px;
+  height: 250px;
+  background-image: url("/img/me.png");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: -40px;
+  line-height: 40px;
+  color: white;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 100px;
+}
+
+.entry {
+  position: relative;
+  margin-bottom: 25px; /* Reduced from 100px to decrease the space between entries */
+}
+
+.year {
+  position: absolute;
+  top: 0;
+  left: -100px; /* Sets the year label to the left of the timeline */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #333;
+  margin-left: 68px; /* Margin from the central timeline */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Söhne, sans-serif;
+}
+
+.content {
+  margin-left: 150px; /* Space for content from the timeline center */
+}
+
+h3 {
+  font-size: 22px;
+  font-family: Unica77llweb, sans-serif;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #333;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  left: -5px; /* Centers the endpoint over the timeline */
+  bottom: 0; /* Position at the bottom of the timeline */
+  width: 15px; /* Width of the circle */
+  height: 15px; /* Height of the circle */
+  background-color: #333; /* Same color as the timeline */
+  border-radius: 50%; /* Makes it circular */
+  display: block;
+}
+
+#word {
+  font-size: 10rem;
+  font-family: Rosart, Georgia, Times New Roman, FZNewBaoSong, serif;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+}
+
+/* Dark mode styles */
+
+.dark-mode{
+  background: black;
+  color: white
+}
+
+.hero__animation-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hero__animation-container svg {
+  position: absolute;
+  left: 0;
+  bottom: -20px; /* Adjust the distance between the line and the text */
+  width: 100%;
+  height: 100px; /* Ensure enough space for the path */
+}
+
+.hero__animation-container svg path {
+  stroke: black; /* Green color for the underline and circles */
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 3000; /* Total length of the path */
+  stroke-dashoffset: 3000; /* Initially hide the entire path */
+  animation: drawPath 4s ease forwards; /* Animate the drawing */
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0; /* Fully reveal the path */
   }
 }
 

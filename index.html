@@ -1,54 +1,26 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Indrajeet's portfolio showcasing projects and skills.">
   <meta name="theme-color" content="#fafafa">
+  
   <title>Indrajeet's Portfolio</title>
+
+  <!-- Favicon -->
   <link rel="icon" href="img/icons8-world-96.png" type="image/x-icon">
+
+  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-  <link href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-    const words = [
-      "Hello, World!", "Hola, Mundo!", "Bonjour, monde!", "مرحبا, بالعالم!",
-      "你好，世界！", "Привет, мир!", "Hallo, Welt!", "안녕, 세계!", "Ciao, Mondo!",
-      "Olá, Mundo!", "こんにちは、世界！", "Hallo, Wereld!", "Hej, världen!",
-      "नमस्ते, दुनिया!", "Merhaba, Dünya!", "Cześć, Świecie!", "Hei, Verden!"
-    ];
 
-    let index = 0;
-
-    function displayWord() {
-      document.getElementById("word").innerHTML = words[index];
-      index++;
-      if (index === words.length) {
-        index = 0;
-      }
-    }
-
-    setInterval(displayWord, 1000);
-  </script>
-  <script>
-    window.ga = function() { ga.q.push(arguments) };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('set', 'anonymizeIp', true);
-    ga('set', 'transport', 'beacon');
-    ga('send', 'pageview');
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
+  <!-- Header Section -->
   <header>
     <div class="landing-text">
       <div id="word">
@@ -60,33 +32,21 @@
     </div>
   </header>
 
+  <!-- About Me Section -->
   <section class="portfolio" id="about-me">
     <div class="container">
       <div class="image-container">
         <div class="image-box"></div>
         <div class="text-box">
           <div class="intro-content">
-            <p>I'm Indrajeet Aditya Roy, a full-stack software engineer and graduate student keen on building innovative scalable solutions, solving complex problems, gaining professional experience, and collaborating with interesting people. I earned my BS in Software Engineering with a focus in Data Science from Iowa State University in 2022.</p>
-
-<p>I'm currently pursuing a MS in Computer Engineering, specializing in Artificial Intelligence and Machine Learning, at Northeastern University. My academic and professional journeys are driven by a passion for applying software in real-world applications and continuously evolving and improving my skillset.</p>
+            <p> <span class="hero__animation-container">I'm Indrajeet Aditya Roy, a full-stack software engineer and graduate student</span> keen on building innovative scalable solutions, solving complex problems, gaining professional experience, and collaborating with people. I earned my BS in Software Engineering with a focus in Data Science from Iowa State University in 2022.</p>
+            <p>I'm currently pursuing a <span class="hero__animation-container">MS in Computer Engineering</span>, specializing in Artificial Intelligence and Machine Learning, at Northeastern University. My academic and professional journeys are driven by a passion for applying software in real-world applications and continuously evolving and improving my skillset.</p>
           </div>
           <div class="social-media-icons">
             <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/indrajeet-aditya-roy/" target="_blank" class="icon-link">
-                  <i class="fab fa-linkedin" style="font-size:60px;color:#2867B2"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/indrajeetadityaroy9" target="_blank" class="icon-link">
-                  <i class="fab fa-github" style="font-size:60px;color:black"></i>
-                </a>
-              </li>
-              <li>
-                <a href="img/Resume.pdf" target="_blank">
-                  <i style="font-size:60px;color:black">📄</i>
-                </a>
-              </li>
+              <li><a href="https://www.linkedin.com/in/indrajeet-aditya-roy/" target="_blank" class="icon-link"><i class="fab fa-linkedin" style="font-size:60px;color:#2867B2"></i></a></li>
+              <li><a href="https://github.com/indrajeetadityaroy9" target="_blank" class="icon-link"><i class="fab fa-github" style="font-size:60px;color:black"></i></a></li>
+              <li><a href="img/Resume.pdf" target="_blank"><i style="font-size:60px;color:black">📄</i></a></li>
             </ul>
           </div>
         </div>
@@ -94,67 +54,73 @@
     </div>
   </section>
 
-<section class="experience" id="experience">
-  <div class="container">
-    <div class="timeline">
-      <div class="entry">
-        <div class="year">2020</div>
-        <div class="content">
-          <h3>Carlin Fit - Software Engineer Intern</h3>
-          <p>Developed companion app for Android platform to interface with the UV light hardware device component of the Purple-Bug UV ride-share cleaning product. Implemented Android app using Java/Kotlin, Retrofit, Glide, Room, RxJava, and Coroutines.</p>
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="timeline">
+        <!-- Experience Entry: Carlin Fit -->
+        <div class="entry">
+          <div class="year">2020</div>
+          <div class="content">
+            <h3>Carlin Fit - Software Engineer Intern</h3>
+            <p>Developed companion app for Android platform to interface with the UV light hardware device component of the Purple-Bug UV ride-share cleaning product. Implemented Android app using Java/Kotlin, Retrofit, Glide, Room, RxJava, and Coroutines.</p>
+          </div>
         </div>
-      </div>
-      <div class="entry">
-        <div class="year">2021</div>
-        <div class="content">
-          <h3>The RealReal - Software Engineer Intern</h3>
-          <p>Developed RESTful Ruby Rails and GraphQL Elixir API services implementing efficient and scalable CRUD operations; utilized AWS RDS for data store,
-            Redis caching for data access optimization, and Kafka messaging for distributed event driven inter-service communication, implementing configuration and administrative control dashboard for the Get Paid Now
-            user program, streamlining admin management of user program.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="year">2022</div>
-        <div class="content">
-          <h3>The RealReal - Software Engineer</h3>
-          <p>Built internal organization employee productivity tools and user product features (API services, Data pipelines/tools and Frontend clients).</p>
-          <p>Tech stack utilized Elixir, Python, Ruby Rails, Javascript, Typescript, React (Redux, Redux-toolkit, Axios, Apollo), GraphQL, Elasticsearch, Kafka, Grafana, Datadog, Bugsnag, AWS Cloud tools (EC2, RDS, S3, SQS), Docker, Docker-compose and DB systems (RDMS (MySQL, PostgreSQL) & NoSQL (DynamoDB, Redis)). Reviewed & deployed PRs, dockerized development environment setup, implemented code test coverage, CI/CD automation via Github actions. Sprint planning and story/ticket pointing using Jira.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="year">2024</div>
-        <div class="content">
-          <h3>Amwell - Software Engineer Intern</h3>
-          <p>Integrated Validic with Amwell Conversa health platform enabling EHR data synchronization from health monitoring apps and devices into user
-            automated healthcare conversations, improving user engagement and care with data driven personalization and analytics. </p>
-          <p>Developed RESTful Ruby on Rails API services to interface with the Validic API and handle data from the Validic Inform Streaming API. Leveraged AWS Kinesis for real-time data stream ingestion, Lambda for data events processing, and DynamoDB for persistent storage</p>
-          <p>Optimized database efficiency by refining Validic account provisioning in API services, effectively eliminating redundant record creation.</p>
-        </div>
-      </div>
-  </div>
-</section>
 
-<section class="portfolio" id="portfolio1">
-  <div class="container">
-    <div class="section-heading">
-      <h1>Research</h1>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description">
-        <h1>Mitigating Deanonymization and DoS Attacks in Decentralized Networks <a href="pdfViewer.html?pdf=CprE530_paper&title=Mitigation Techniques Against Deanonymization and Denial-of-Service (DoS) Attacks In Decentralized Networks" target="_blank" class="cta">View Paper</a></h1>
-        <p>Analysis of attack vectors and Tor network architecture vulnerabilities focusing on deanonymization and Denial-of-Service (DoS) attacks in
-          decentralized networks and mitigating strategies to safeguard anonymity and maintain network integrity.</p>
+        <!-- Experience Entry: The RealReal Intern -->
+        <div class="entry">
+          <div class="year">2021</div>
+          <div class="content">
+            <h3>The RealReal - Software Engineer Intern</h3>
+            <p>Developed RESTful Ruby Rails and GraphQL Elixir API services implementing efficient and scalable CRUD operations; utilized AWS RDS for data store, Redis caching for data access optimization, and Kafka messaging for distributed event-driven inter-service communication.</p>
+          </div>
+        </div>
+
+        <!-- Experience Entry: The RealReal Software Engineer -->
+        <div class="entry">
+          <div class="year">2022</div>
+          <div class="content">
+            <h3>The RealReal - Software Engineer</h3>
+            <p>Built internal organization employee productivity tools and user product features (API services, Data pipelines/tools, and Frontend clients). Tech stack: Elixir, Python, Ruby Rails, Javascript, Typescript, React (Redux), GraphQL, Elasticsearch, Kafka, Grafana, AWS Cloud tools.</p>
+          </div>
+        </div>
+
+        <!-- Experience Entry: Amwell Intern -->
+        <div class="entry">
+          <div class="year">2024</div>
+          <div class="content">
+            <h3>Amwell - Software Engineer Intern</h3>
+            <p>Integrated Validic with Amwell Conversa health platform enabling EHR data synchronization from health monitoring apps and devices into user automated healthcare conversations.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="portfolio-item">
-      <div class="portfolio-description">
-        <h1>Enhancing Research Paper Summarization Through Advanced Language Techniques: Integrating Abstractive Methods, Fine-tuning Large Language Models, and Retrieval-Augmented Generation <a href="pdfViewer.html?pdf=Report&title=Enhancing Research Paper Summarization Through Advanced Language Techniques: Integrating Abstractive Methods, Fine-tuning Large Language Models, and Retrieval-Augmented Generation Technology" target="_blank" class="cta">View Paper</a></h1>
-        <p>Enhancement of academic journal summarization precision and comprehension by integrating language model fine-tuning methodologies such as
-          Parameter-Ecient Fine-Tuning (PEFT) and Low-Rank Adaptation (LoRA) with Retrieval-Augmented Generation (RAG).</p>
+  </section>
+
+  <!-- Research Section -->
+  <section class="portfolio" id="portfolio1">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Research</h1>
+      </div>
+      
+      <!-- Research Project: Deanonymization -->
+      <div class="portfolio-item">
+        <div class="portfolio-description">
+          <h1>Mitigating Deanonymization and DoS Attacks in Decentralized Networks <a href="pdfViewer.html?pdf=CprE530_paper&title=Mitigation Techniques Against Deanonymization and Denial-of-Service (DoS) Attacks In Decentralized Networks" target="_blank" class="cta">View Paper</a></h1>
+          <p>Analysis of attack vectors and Tor network architecture vulnerabilities focusing on deanonymization and Denial-of-Service (DoS) attacks in decentralized networks.</p>
+        </div>
+      </div>
+
+      <!-- Research Project: Summarization -->
+      <div class="portfolio-item">
+        <div class="portfolio-description">
+          <h1>Enhancing Research Paper Summarization <a href="pdfViewer.html?pdf=Report&title=Enhancing Research Paper Summarization" target="_blank" class="cta">View Paper</a></h1>
+          <p>Enhancement of academic journal summarization precision by integrating language model fine-tuning methodologies such as PEFT and Retrieval-Augmented Generation (RAG).</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <section class="portfolio" id="portfolio">
   <div class="container">
@@ -162,70 +128,70 @@
       <h1>Projects</h1>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
+      <div class="portfolio-description">
         <h1>NLP-Enhanced Sumerian-English Translation: Classification and NER Techniques <a href="pdfViewer.html?pdf=Cs6120_paper&title=An Natural Language Processing Approach to Sumerian Translation" target="_blank" class="cta">View Paper</a></h1>
         <p>Application of Natural Language Processing (NLP) techniques to improve the translation accuracy of ancient and low-resource languages, specifically focusing on two primary technical challenges: the development of classification-translation models that facilitate transliterations between Sumerian and English, and a Named Entity Recognition (NER) model designed to bridge lexical gaps in English originating from the unique properties of Sumerian-specific proper nouns. The project aims to enhance translational accuracy and enrich the semantic understanding of translated texts.</p>
       </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
+      <div class="portfolio-description">
         <h1>Reinforcement Learning in Complex Route Navigation and Spatial Decision Making</h1>
         <p>This simulation explores the implementation of Q-Learning, SARSA, and Actor-Critic algorithms in a complex stochastic grid-based maze environment, featuring dynamic challenges like walls, bumps, and oil slicks. The maze consists of 248 navigable cells. Each algorithm is evaluated over 10 independent runs, each encompassing 1,000 episodes, aiming to optimize paths and maximize rewards within a defined penalty and reward structure. This testing framework assesses the efficacy of each algorithm in achieving the highest cumulative rewards and successfully navigating to the goal optimally.</p>
         <a href="img/Report2.pdf" target="_blank" class="cta">View Report</a>
       </div>
-      <div class="portfolio-img has-margin-right">
+      <div class="portfolio-img">
         <img src="img/Screenshot 2024-05-17 at 3.33.16 PM.png" alt="" width="600" height="400">
       </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
+      <div class="portfolio-description">
         <h1>Reinforcement Learning in Cancer Research: Optimizing the p53-Mdm2 Feedback Loop <a href="img/Report3.pdf" target="_blank" class="cta">View Report</a></h1>
 <p>The p53-Mdm2 negative feedback loop is crucial for cell cycle regulation and tumor suppression, playing a significant role in advancing cancer therapy and developing new treatment strategies. This project aims to employ reinforcement learning to finely adjust the activation of this network's key components, specifically ATM, p53, Wip1, and MDM2. The primary objective is to establish an optimal control policy that effectively manages the p53-Mdm2 feedback loop, maximizing the therapeutic efficacy of maintaining an active p53 pathway. By achieving and sustaining this optimal state, the implementation offers a novel approach to controlling complex cellular networks, potentially inhibiting tumor growth and enhancing cellular repair mechanisms.</p>
       </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h1>Natural Language Sentiment Analysis: Custom Vectorization and Tokenization Methodologies<a href="https://github.com/indrajeetadityaroy9/Movie_review_sentiment_analysis" target="_blank" class="cta">Git Repository</a></h1>
+      <div class="portfolio-description">
+        <h1>Natural Language Sentiment Analysis: Custom Vectorization and Tokenization Methodologies<a href="https://github.com/indrajeetadityaroy9/Movie_review_sentiment_analysis" target="_blank" class="cta">Github Repository</a></h1>
         <p>Implementation of custom vectorization and tokenization techniques for natural language data, with a performance comparison to the baseline sklearn TfidfVectorizer in a sentiment analysis task using IMDb movie reviews. The primary objective is to create a custom TF-IDF vectorization technique that offers more control over how the text data is processed and represented, including tokenization, n-gram generation, and feature selection. This custom approach is benchmarked against the standard sklearn TF-IDF implementation to assess its effectiveness in capturing key features and improving classification performance.</p>
       </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h1>News Article Classifier with Custom K-Means Clustering Implementation <a href="https://github.com/indrajeetadityaroy9/News_article_classifier" target="_blank" class="cta">Git Repository</a> </h1>
+      <div class="portfolio-description">
+        <h1>News Article Classifier with Custom K-Means Clustering Implementation <a href="https://github.com/indrajeetadityaroy9/News_article_classifier" target="_blank" class="cta">Github Repository</a> </h1>
         <p>Implementation and evaluation of the K-Means clustering algorithm for analyzing text data within the 20 Newsgroups dataset. By utilizing a Term Frequency-Inverse Document Frequency (TF-IDF) vectorization approach, the implementation aims to categorize text documents into clusters, enhancing the understanding of text content similarities. The custom algorithm implementation is benchmarked against the standard Scikit-learn KMeans to assess performance metrics such as Homogeneity, Completeness, V-measure, Adjusted Rand Index, and Silhouette Coefficient. These metrics are crucial for evaluating the custom model's effectiveness in handling complex textual data, with a focus on optimizing clustering quality and execution efficiency.</p>
       </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h1>Neural Network Optimization for Minimized Error Probabilistic Classification <a href="img/Project_report.pdf" target="_blank" class="cta">View Report</a> <a href="https://github.com/indrajeetadityaroy9/EECE5644/tree/main/assignment3/question1" target="_blank" class="cta">Git Repository</a></h1>
+      <div class="portfolio-description">
+        <h1>Neural Network Optimization for Minimized Error Probabilistic Classification <a href="img/Project_report.pdf" target="_blank" class="cta">View Report</a> <a href="https://github.com/indrajeetadityaroy9/EECE5644/tree/main/assignment3/question1" target="_blank" class="cta">Github Repository</a></h1>
 <p>Development and optimization of Multilayer Perceptrons (MLPs) for classifying a 3-dimensional real-valued random vector into one of four classes with uniform priors. The main objective is to effectively approximate class label posteriors and to implement a Maximum A Posteriori (MAP) classification rule using the trained MLPs, achieving the lowest possible probability of error.</p>
 <p>The MLPs are trained using maximum likelihood parameter estimation, minimizing the average cross-entropy loss and enabling precise approximation of the class label posteriors. Post-training, the MLPs are utilized to implement a MAP classification rule aimed at minimizing the expected loss, using a binary loss function for correct and incorrect classification.</p>
 <p>The optimization process includes one hidden layer of perceptrons, with the optimal number of neurons determined via K-fold cross-validation and GridSearchCV. These methods are used to fine-tune the number of perceptrons and regularization, ensuring the model is appropriately scaled to the dataset size and complexity.</p>
       </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h1>XML Data Warehouse for Data Forecasting and Analysis <a href="https://github.com/indrajeetadityaroy9/xml_data_warehouse" target="_blank" class="cta">Git Repository</a></h1>
+      <div class="portfolio-description">
+        <h1>XML Data Warehouse for Data Forecasting and Analysis <a href="https://github.com/indrajeetadityaroy9/xml_data_warehouse" target="_blank" class="cta">Github Repository</a></h1>
 <p>Implementation of a data warehouse for pharmaceutical sales which integrates sales representative details and transactional data. Utilizing ETL pipelines, the system efficiently extracts data from complex XML data structures and transforms it into a format suitable for MySQL DB integration.</p>
 <p>The architecture of the data warehouse is designed to support OLTP (Online Transaction Processing) for high transaction rates and immediate query handling, while also being optimized for OLAP (Online Analytical Processing) to facilitate complex analytical queries. This dual optimization ensures that the data warehouse can handle both day-to-day operations and provide deep analytical insights.</p>
 <p>Key project activities include designing a scalable database schema that accommodates growing data volumes and diverse datasets, and implementing data transformation processes that ensure data integrity and compatibility with enterprise analytics tools. The final component of the project focuses on data analysis and visualization, employing data analytics techniques to interpret the data, identify trends, and support decision-making processes in pharmaceutical sales strategies.</p>
       </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
-        <h1>Unified File System Query Tool with Hierarchical DOM Analysis <a href="https://github.com/indrajeetadityaroy9/hierarchical-file-system" target="_blank" class="cta">Git Repository</a></h1>
+      <div class="portfolio-description">
+        <h1>Unified File System Query Tool with Hierarchical DOM Analysis <a href="https://github.com/indrajeetadityaroy9/hierarchical-file-system" target="_blank" class="cta">Github Repository</a></h1>
         <p>Development of a query tool to navigate Unix and Windows file systems, implementing a hierarchical document object model (DOM) for data store queries. It provides comprehensive file navigation and structured data querying capabilities across multiple operating systems, streamlining management of complex data structures. By interacting with file system APIs, the tool enables detailed search, file retrieval based on specific attributes, and query execution within hierarchical data structures. Its functionality supports a range of applications from data analysis to system management</p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h1>API Triggered ETL Pipeline for CSV Processing <a href="https://github.com/indrajeetadityaroy9/user_experiments_data_etl_service" target="_blank" class="cta">Git Repository</a></h1>
+        <h1>API Triggered ETL Pipeline for CSV Processing <a href="https://github.com/indrajeetadityaroy9/user_experiments_data_etl_service" target="_blank" class="cta">Github Repository</a></h1>
         <p>Implementation of an ETL pipeline to efficiently process and transform CSV files into actionable data points and features. Responsive to API calls, the system methodically extracts data from the CSV files, applies necessary transformations, and uploads the processed data to a relational database. This pipeline facilitates dynamic data management, supports data analysis and also provides scope for extended API integration.</p>
       </div>
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h1>Bayesian Vehicle Localization Optimization in 2D space via Range Measurements and MAP Estimation <a href="https://github.com/indrajeetadityaroy9/EECE5644/tree/main/assignment2/question3" target="_blank" class="cta">Git Repository</a></h1>
+        <h1>Vehicle Localization Optimization in 2D space via Range Measurements and MAP Estimation <a href="https://github.com/indrajeetadityaroy9/EECE5644/tree/main/assignment2/question3" target="_blank" class="cta">Github Repository</a></h1>
         <p>Implementation of Maximum A Posteriori (MAP) estimation to enhance vehicle localization accuracy in 2D environments. The Bayesian model integrates range measurements to multiple landmarks with existing positional data, allowing for a highly accurate estimation of the vehicle's most probable location. By utilizing MAP estimation, the model effectively addresses noisy distance measurements and prior knowledge of the vehicle's position, ensuring precise navigation despite environmental complexities and measurement inaccuracies.</p>
       </div>
       <div class="portfolio-img has-margin-right">
@@ -271,7 +237,7 @@
     </div>
     <div class="portfolio-item">
       <div class="portfolio-description has-margin-right">
-        <h1>Sound Processor and Song Note Compiler <a href="https://github.com/indrajeetadityaroy9/song_note_compiler" target="_blank" class="cta">Git Repository</a> </h1>
+        <h1>Sound Processor and Song Note Compiler <a href="https://github.com/indrajeetadityaroy9/song_note_compiler" target="_blank" class="cta">Github Repository</a> </h1>
         <p>Sound processing and song note compilation platform for real-time audio signal processing and synthesis developed using C and C++. It enables the generation of various waveforms—including Sine, Square, Triangle, and Sawtooth—through user-adjustable parameters such as sample rate, frequency, and duration.</p>
         <br>
         <p>The platform supports complex audio signal layering, allowing users to overlay multiple audio signals with precision. This includes detailed amplitude control and modulation, where the amplitude of one signal can dynamically influence others. Advanced digital filters, such as a digital reverb filter, create short-lived echoes to simulate different acoustic environments effectively.</p>
@@ -302,25 +268,19 @@
   </div>
 </section>
 
-<section class="portfolio" id="portfolio2">
-  <div class="container">
-    <div class="section-heading">
-    </div>
-    <div class="portfolio-item">
-    </div>
-  </div>
-</section>
+<svg>
+  <defs>
+    <filter id="rough">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+    </filter>
+  </defs>
+</svg>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!-- JavaScript Files -->
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
 </html>
