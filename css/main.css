@@ -348,6 +348,9 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;
+  border-right: 2px solid black; /* Create a cursor effect */
+  white-space: nowrap;           /* Prevent wrapping */
+  overflow: hidden;
 }
 
 /* Dark mode styles */

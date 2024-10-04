@@ -6,16 +6,31 @@
     "नमस्ते, दुनिया!", "Merhaba, Dünya!", "Cześć, Świecie!", "Hei, Verden!"
   ];
 
-  let index = 0;
+  let index = 0;        // Keeps track of the current word
+  let charIndex = 0;    // Keeps track of the current character in the word
+  const typingSpeed = 100; // Typing speed in milliseconds
+  const pauseBetweenWords = 1000; // Pause before moving to the next word
 
-  // Function to update the word in the element with id="word"
-  function displayWord() {
-    document.getElementById("word").innerHTML = words[index];
-    index = (index + 1) % words.length; // Reset index to 0 when end of array is reached
+  // Function to display each character one by one (typing animation)
+  function typeWord() {
+    const word = words[index];
+    if (charIndex < word.length) {
+      // Display next character
+      document.getElementById("word").innerHTML = word.substring(0, charIndex + 1);
+      charIndex++;
+      setTimeout(typeWord, typingSpeed); // Type next character after a delay
+    } else {
+      // After finishing typing the word, wait for a pause and move to the next word
+      setTimeout(() => {
+        charIndex = 0;  // Reset the character index for the next word
+        index = (index + 1) % words.length; // Move to the next word (cyclic)
+        typeWord(); // Start typing the next word
+      }, pauseBetweenWords);
+    }
   }
 
-  // Initialize word display with 1-second intervals
-  setInterval(displayWord, 1000);
+  // Start the typing animation
+  typeWord();
 
   //Function to toggle dark mode on and off
   function generateSVGPath(textWidth) {
