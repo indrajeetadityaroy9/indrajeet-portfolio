@@ -1,6 +1,6 @@
   // Array of words to display
   const words = [
-    "Hello, World!", "Hola, Mundo!", "Bonjour, monde!", "مرحبا, بالعالم!",
+    "Hello, World!", "Hola, Mundo!", "Bonjour, monde!", "!مرحبا, بالعالم",
     "你好，世界！", "Привет, мир!", "Hallo, Welt!", "안녕, 세계!", "Ciao, Mondo!",
     "Olá, Mundo!", "こんにちは、世界！", "Hallo, Wereld!", "Hej, världen!",
     "नमस्ते, दुनिया!", "Merhaba, Dünya!", "Cześć, Świecie!", "Hei, Verden!"
