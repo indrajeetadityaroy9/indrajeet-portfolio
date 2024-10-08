@@ -40,14 +40,34 @@
         <div class="image-box"></div>
         <div class="text-box">
           <div class="intro-content">
+            <div>
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="checkbox-label" title="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label>
+            </div>
             <p> I'm Indrajeet Aditya Roy, a full-stack software engineer and graduate student keen on building innovative scalable solutions, solving complex problems, gaining professional experience, and collaborating with people. I earned my BS in Software Engineering with a focus in Data Science from Iowa State University in 2022.</p>
             <p>I'm currently pursuing a MS in Computer Engineering, specializing in Artificial Intelligence and Machine Learning, at Northeastern University. My academic and professional journeys are driven by a passion for applying software in real-world applications and continuously evolving and improving my skillset.</p>
           </div>
           <div class="social-media-icons">
             <ul>
-              <li><a href="https://www.linkedin.com/in/indrajeet-aditya-roy/" target="_blank" class="icon-link"><i class="fab fa-linkedin" style="font-size:60px;color:#2867B2"></i></a></li>
-              <li><a href="https://github.com/indrajeetadityaroy9" target="_blank" class="icon-link"><i class="fab fa-github" style="font-size:60px;color:black"></i></a></li>
-              <li><a href="img/Resume.pdf" target="_blank"><i style="font-size:60px;color:black">📄</i></a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/indrajeet-aditya-roy/" target="_blank" class="icon-link">
+                  <i class="fab fa-linkedin" style="font-size:60px;color:#2867B2"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/indrajeetadityaroy9" target="_blank" id="github-icon-link" class="icon-link">
+                  <i id="github-icon" class="fab fa-github" style="font-size:60px;"></i>
+                </a>
+              </li>
+              <li>
+                <a href="img/Resume.pdf" target="_blank" class="icon-link">
+                  <i id="resume-icon" class="fas fa-file-alt" style="font-size:60px;color:black;"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -64,7 +84,8 @@
           <div class="year">2020</div>
           <div class="content">
             <h3>Carlin Fit - Software Engineer Intern</h3>
-            <p>Developed companion app for Android platform to interface with the UV light hardware device component of the Purple-Bug UV ride-share cleaning product. Implemented Android app using Java/Kotlin, Retrofit, Glide, Room, RxJava, and Coroutines.</p>
+            <p>Developed Android companion app to interface with the UV light hardware device component of the Purple-Bug UV ride-share cleaning
+              product, utilizing Java/Kotlin, Retrofit, Glide, Room, RxJava, and Coroutines.</p>
           </div>
         </div>
 
@@ -73,7 +94,9 @@
           <div class="year">2021</div>
           <div class="content">
             <h3>The RealReal - Software Engineer Intern</h3>
-            <p>Developed RESTful Ruby Rails and GraphQL Elixir API services implementing efficient and scalable CRUD operations; utilized AWS RDS for data store, Redis caching for data access optimization, and Kafka messaging for distributed event-driven inter-service communication.</p>
+            <p>Developed RESTful Ruby Rails and GraphQL Elixir API services enabling efficient and scalable CRUD operations; utilized AWS RDS for data store,
+              Redis caching for data access optimization, and Kafka message broker for distributed inter-service communication, implementing the ‘Get Paid
+              Now’ user program.</p>
           </div>
         </div>
 
@@ -91,7 +114,8 @@
           <div class="year">2024</div>
           <div class="content">
             <h3>Amwell - Software Engineer Intern</h3>
-            <p>Integrated Validic with Amwell Conversa health platform enabling EHR data synchronization from health monitoring apps and devices into user automated healthcare conversations.</p>
+            <p>Integrated Validic platform with Amwell Conversa health platform enabling EHR data synchronization from health monitoring apps and devices into user
+              automated healthcare conversations, improving user engagement and care with data driven personalization and analysis.</p>
           </div>
         </div>
       </div>
@@ -117,7 +141,7 @@
       <div class="portfolio-item">
         <div class="portfolio-description">
           <h1>Enhancing Research Paper Summarization <a href="pdfViewer.html?pdf=Report&title=Enhancing Research Paper Summarization" target="_blank" class="cta">View Paper</a></h1>
-          <p>Enhancement of academic journal summarization precision by integrating language model fine-tuning methodologies such as PEFT and Retrieval-Augmented Generation (RAG).</p>
+          <p>Enhancement of LLM based academic journal summarization precision by integrating language model fine-tuning methodologies such as Parameter-Efficient Fine-Tuning (PEFT) and Retrieval-Augmented Generation (RAG).</p>
         </div>
       </div>
     </div>

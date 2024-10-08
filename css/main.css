@@ -183,12 +183,11 @@ header {
 }
 
 .portfolio-description h1{
-  font-family: Unica77llweb, sans-serif;
+  font-family: 'Inconsolata', sans-serif;
   font-size: 25px;
   margin: 0 0 10px;
   font-size: 22px;
-  font-family: Unica77llweb, sans-serif;
-  font-weight: 500;
+  font-weight: 1000;
 }
 
 .portfolio-img {
@@ -266,14 +265,29 @@ p {
 
 .social-media-icons a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 60px; /* Matches the icon size */
+  height: 60px;
   border-radius: 50%;
   margin-top: 30px;
-  margin-left: -40px;
-  line-height: 40px;
-  color: white;
+  margin-left: -40px; /* Increased negative margin to move left */
+  line-height: 60px;
+  text-align: center;
 }
+
+/* Dark mode */
+.dark-mode .social-media-icons a i {
+  color: white; /* All icons in dark mode should have white color */
+}
+
+/* Light mode (default) */
+.social-media-icons a i {
+  color: black; /* Default icon color in light mode */
+}
+
+.dark-mode #resume-icon {
+  color: white; /* Resume icon color in dark mode */
+}
+
 
 .timeline {
   position: relative;
@@ -298,9 +312,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: bold;
-  font-family: Söhne, sans-serif;
+  font-family: 'Inconsolata', sans-serif;
 }
 
 .content {
@@ -309,8 +323,8 @@ p {
 
 h3 {
   font-size: 22px;
-  font-family: Unica77llweb, sans-serif;
-  font-weight: 500;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 1000;
 }
 
 p {
@@ -388,4 +402,102 @@ p {
   }
 }
 
+body, .section-heading h1, .section-heading h1::before, .section-heading h1::after {
+  transition: all 0.2s linear; /* Apply transition to light mode */
+}
+
+.dark-mode {
+  transition: all 0.2s linear;
+}
+
+.dark-mode html {
+  color: white;
+}
+
+.dark-mode body {
+  background: black;
+}
+
+.section-heading h1 {
+  color: black;
+}
+
+.section-heading h1::before, .section-heading h1::after {
+  background: black;
+  transition: background 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Dark mode */
+.dark-mode .section-heading h1 {
+  color: white;
+}
+
+.dark-mode .section-heading h1::before, .dark-mode .section-heading h1::after {
+  background: white;
+}
+
+.dark-mode .landing-text h1 {
+  background: white;
+}
+
+.dark-mode .author-image {
+  border: 2px solid white;
+}
+
+.dark-mode h3 {
+  font-family: 'Inconsolata', sans-serif;
+}
+
+.dark-mode #word {
+  font-size: 10rem;
+  font-family: Rosart, Georgia, Times New Roman, FZNewBaoSong, serif;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  border-right: 2px solid black; /* Create a cursor effect */
+  white-space: nowrap;           /* Prevent wrapping */
+  overflow: hidden;
+}
+
+.dark-mode #github-icon {
+  color: white;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
   

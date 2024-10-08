@@ -1,4 +1,3 @@
-  // Array of words to display
   const words = [
     "Hello, World!", "Hola, Mundo!", "Bonjour, monde!", "!مرحبا, بالعالم",
     "你好，世界！", "Привет, мир!", "Hallo, Welt!", "안녕, 세계!", "Ciao, Mondo!",
@@ -31,3 +30,39 @@
 
   // Start the typing animation
   typeWord();
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const checkbox = document.getElementById("checkbox");
+    const body = document.body;
+    const githubIcon = document.getElementById('github-icon');
+    const resumeIcon = document.getElementById('resume-icon');
+  
+    // Apply saved theme from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        enableDarkMode();
+        checkbox.checked = true;  // Keep the toggle switch in dark mode position
+    }
+  
+    // Toggle dark mode when the checkbox changes
+    checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+            enableDarkMode();
+        } else {
+            disableDarkMode();
+        }
+    });
+  
+    function enableDarkMode() {
+        body.classList.add('dark-mode');
+        githubIcon.style.color = "white";  // Change GitHub icon color to white
+        resumeIcon.style.color = "white";  // Change resume icon color to white
+        localStorage.setItem('darkMode', 'enabled');  // Save dark mode state
+    }
+  
+    function disableDarkMode() {
+        body.classList.remove('dark-mode');
+        githubIcon.style.color = "black";  // Change GitHub icon color to black
+        resumeIcon.style.color = "black";  // Change resume icon color to black
+        localStorage.setItem('darkMode', null);  // Clear dark mode state
+    }
+  });
